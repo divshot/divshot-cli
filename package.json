@@ -1,5 +1,5 @@
 {
-  "name": "divshot-cli",
+  "name": "divshot",
   "version": "0.0.1",
   "description": "Command line interface to Divshot",
   "main": "index.js",
