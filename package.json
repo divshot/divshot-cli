@@ -1,0 +1,23 @@
+{
+  "name": "divshot-cli",
+  "version": "0.0.1",
+  "description": "Command line interface to Divshot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/divshot/divshot-cli.git"
+  },
+  "keywords": [
+    "divshot",
+    "divshot.io",
+    "hosting"
+  ],
+  "author": "Divshot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/divshot/divshot-cli/issues"
+  }
+}
