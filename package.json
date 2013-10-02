@@ -1,7 +1,6 @@
 {
   "description": "Application-Grade Static Web Hosting",
   "version": "0.0.2",
-  "private": true,
   "dependencies": {
     "flatiron": "~0.3.8",
     "colors": "~0.6.2"
