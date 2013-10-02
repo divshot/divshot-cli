@@ -31,5 +31,9 @@
     "divshot",
     "divshot.io",
     "hosting"
-  ]
+  ],
+  "preferGlobal": "true",
+   "bin": {
+     "divshot" : "bin/divshot"
+   }
 }
