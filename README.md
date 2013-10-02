@@ -11,14 +11,13 @@ npm install divshot -g
 
 ## Usage
 
-### Login
+#### Login
 
 ```javascript
-divshot login
-// Prompts for email and password
+divshot login // Prompts for email and password
 ```
 
-### Logout
+#### Logout
 
 ```
 divshot logout
