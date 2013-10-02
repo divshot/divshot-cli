@@ -19,6 +19,8 @@
     "it": true,
     "describe": true,
     "beforeEach": true,
-    "afterEach": true
+    "afterEach": true,
+    "chai": true,
+    "Regex": true
   }
 }

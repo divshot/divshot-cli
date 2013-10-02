@@ -21,7 +21,7 @@ module.exports = function(grunt) {
       tests: {
         options: {
           reporter: 'spec',
-          require: ('./test/test_config')
+          require: ['./test/test_config']
         },
         src: [__dirname + '/test/**/*.js']
       }

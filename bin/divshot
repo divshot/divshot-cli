@@ -1,5 +1,10 @@
 #!/usr/local/bin/node
 
-process.env.NODE_ENV = (process.env.NODE_ENV) ? process.env.NODE_ENV : 'development';
+process.env.NODE_ENV = (process.env.NODE_ENV) ? process.env.NODE_ENV : 'production';
+
+var env = require('../lib/env');
+var _defaults = require('lodash.defaults');
+
+_defaults(process.env, env);
 
 require('../lib/divshot').start();

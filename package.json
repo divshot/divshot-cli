@@ -3,7 +3,9 @@
   "version": "0.0.2",
   "dependencies": {
     "flatiron": "~0.3.8",
-    "colors": "~0.6.2"
+    "colors": "~0.6.2",
+    "lodash.defaults": "~2.2.0",
+    "winston": "~0.7.2"
   },
   "devDependencies": {
     "cli-easy": "0.1.0",
@@ -13,7 +15,8 @@
     "grunt-contrib-jshint": "~0.6.4",
     "grunt-mocha-test": "~0.7.0",
     "request": "~2.27.0",
-    "chai": "~1.8.0"
+    "chai": "~1.8.0",
+    "proxyquire": "~0.5.1"
   },
   "scripts": {
     "test": "grunt test"
