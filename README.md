@@ -9,6 +9,21 @@ CLI for Divshot
 npm install divshot -g
 ```
 
+## Usage
+
+### Login
+
+```javascript
+divshot login
+// Prompts for email and password
+```
+
+### Logout
+
+```
+divshot logout
+```
+
 ## Test
 
 ```
