@@ -1,4 +1,16 @@
-divshot-cli
+Divshot CLI
 ===========
 
-Command line interface to Divshot.
+CLI for Divshot
+
+## Install
+
+```
+npm install divshot -g
+```
+
+## Test
+
+```
+grunt test
+```

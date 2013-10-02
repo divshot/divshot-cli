@@ -1,23 +1,35 @@
 {
-  "name": "divshot",
-  "version": "0.0.1",
-  "description": "Command line interface to Divshot",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Application-Grade Static Web Hosting",
+  "version": "0.0.2",
+  "private": true,
+  "dependencies": {
+    "flatiron": "~0.3.8",
+    "colors": "~0.6.2"
   },
+  "devDependencies": {
+    "cli-easy": "0.1.0",
+    "vows": "0.6.1",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-mocha-test": "~0.7.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "name": "divshot",
+  "author": "Divshot",
+  "homepage": "http://divshot.io",
   "repository": {
     "type": "git",
     "url": "https://github.com/divshot/divshot-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/divshot/divshot-cli/issues"
   },
   "keywords": [
     "divshot",
     "divshot.io",
     "hosting"
-  ],
-  "author": "Divshot",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/divshot/divshot-cli/issues"
-  }
+  ]
 }
