@@ -5,7 +5,8 @@
     "flatiron": "~0.3.8",
     "colors": "~0.6.2",
     "lodash.defaults": "~2.2.0",
-    "winston": "~0.7.2"
+    "winston": "~0.7.2",
+    "regular": "~0.1.1"
   },
   "devDependencies": {
     "cli-easy": "0.1.0",

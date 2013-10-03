@@ -61,16 +61,13 @@ describe('Login', function () {
     var callbackSpy = sinon.spy();
     sinon.spy(login.internals, 'saveToken');
     
-    login.internals.loginHandler(callbackSpy)(null, {
+    login.internals.initLogin(callbackSpy)(null, {
       email: 'asdf@asdf.com',
       password: 'password1'
     });
     
-    var args = login.internals.saveToken.getCall(0).args;
-    
     expect(login.internals.saveToken.called).to.be.ok;
-    expect(args[0]).to.equal('my_token');
-    expect(args[1]).to.eql(callbackSpy);
+    expect(login.internals.saveToken.calledWith('my_token', callbackSpy)).to.be.ok;
   });
   
   it('logs the user in from the prompt', function () {
@@ -78,7 +75,7 @@ describe('Login', function () {
     login();
     
     expect(divshot.prompt.get.called).to.be.ok;
-    expect(divshot.prompt.get.getCall(0).args[0]).to.eql(login.internals.schema);
+    expect(divshot.prompt.get.calledWith(login.internals.schema)).to.be.ok;
   });
   
   describe('Schema', function () {
