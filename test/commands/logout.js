@@ -16,7 +16,7 @@ describe('Logout', function () {
     user.file = './.userconfig.json';
     user.dir = './';
     
-    fs.writeFile(user.file, '{"email": "asdf","password": "asdf"}', done);
+    fs.writeFile(user.file, '{"token": "asdf"}', done);
   });
   
   afterEach(function (done) {
@@ -26,7 +26,7 @@ describe('Logout', function () {
   it('should remove the users credentials from the config file', function (done) {
     logout(function () {
       var userconfig = require('../../.userconfig.json');
-      expect(userconfig).to.not.have.keys(['email', 'password']);
+      expect(userconfig).to.not.have.keys(['token']);
       done();
     });
   });

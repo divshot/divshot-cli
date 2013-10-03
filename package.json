@@ -16,7 +16,9 @@
     "grunt-mocha-test": "~0.7.0",
     "request": "~2.27.0",
     "chai": "~1.8.0",
-    "proxyquire": "~0.5.1"
+    "proxyquire": "~0.5.1",
+    "sinon": "~1.7.3",
+    "sinon-chai": "~2.4.0"
   },
   "scripts": {
     "test": "grunt test"
