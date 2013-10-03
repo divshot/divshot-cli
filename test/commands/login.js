@@ -17,6 +17,13 @@ var depStubs = {
 var login = stubRequire('../../lib/commands/login', depStubs);
 
 describe('Login', function () {
+  beforeEach(function () {
+    sinon.stub(login.internals.userConfig, 'save');
+  });
+  
+  afterEach(function () {
+    login.internals.userConfig.save.restore();
+  });
   
   it('gets an auth token from the api', function (done) {
     login.internals.getToken('email@email.com', 'password1', function (err, token) {
@@ -35,7 +42,6 @@ describe('Login', function () {
     var callbackSpy = sinon.spy();
     
     sinon.spy(userConfig, 'set');
-    sinon.spy(userConfig, 'save');
     
     login.internals.saveToken('my_token', callbackSpy);
     
