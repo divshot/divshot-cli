@@ -7,7 +7,7 @@
     "lodash.defaults": "~2.2.0",
     "winston": "~0.7.2",
     "regular": "~0.1.1",
-    "divshot": "0.0.6"
+    "divshot": "0.0.7"
   },
   "devDependencies": {
     "cli-easy": "0.1.0",
