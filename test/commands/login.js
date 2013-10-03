@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 var sinon = require("sinon");
 var stubRequire = require('proxyquire');
-var divshot = require('../../lib/divshot');
+var cli = require('../../lib/divshot');
 var depStubs = {
   request: function (options, callback) {
     callback(null, {
@@ -12,6 +12,17 @@ var depStubs = {
   },
   winston: {
     error: function () {}
+  },
+  divshot: {
+    createClient: function () {
+      return {
+        user: {
+          authenticate: function (callback) {
+            callback(null, 'my_token');
+          } 
+        }
+      };
+    }
   }
 };
 var login = stubRequire('../../lib/commands/login', depStubs);
@@ -23,14 +34,6 @@ describe('Login', function () {
   
   afterEach(function () {
     login.internals.userConfig.save.restore();
-  });
-  
-  it('gets an auth token from the api', function (done) {
-    login.internals.getToken('email@email.com', 'password1', function (err, token) {
-      expect(err).to.be.null;
-      expect(token).to.equal('my_token');
-      done();
-    });
   });
   
   it('sets the user config file reference', function () {
@@ -50,19 +53,6 @@ describe('Login', function () {
     expect(userConfig.save.getCall(0).args[0]).to.eql(callbackSpy);
   });
   
-  it('parses the token from the api location header', function () {
-    var headers1 = {
-      location: 'http://redirect.com/#token=my_token'
-    };
-    var headers2 = {};
-    
-    var token1 = login.internals.parseTokenFromHeaders(headers1);
-    var token2 = login.internals.parseTokenFromHeaders(headers2);
-    
-    expect(token1).to.equal('my_token');
-    expect(token2).to.be.undefined;
-  });
-  
   it('handles the login prompt callback', function () {
     var callbackSpy = sinon.spy();
     sinon.spy(login.internals, 'saveToken');
@@ -72,16 +62,15 @@ describe('Login', function () {
       password: 'password1'
     });
     
-    expect(login.internals.saveToken.called).to.be.ok;
     expect(login.internals.saveToken.calledWith('my_token', callbackSpy)).to.be.ok;
   });
   
   it('logs the user in from the prompt', function () {
-    sinon.spy(divshot.prompt, 'get');
+    sinon.spy(cli.prompt, 'get');
     login();
     
-    expect(divshot.prompt.get.called).to.be.ok;
-    expect(divshot.prompt.get.calledWith(login.internals.schema)).to.be.ok;
+    expect(cli.prompt.get.called).to.be.ok;
+    expect(cli.prompt.get.calledWith(login.internals.schema)).to.be.ok;
   });
   
   describe('Schema', function () {
