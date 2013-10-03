@@ -24,7 +24,7 @@
   "scripts": {
     "test": "grunt test"
   },
-  "name": "divshot",
+  "name": "divshot-cli",
   "author": "Divshot",
   "homepage": "http://divshot.io",
   "repository": {
