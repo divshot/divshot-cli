@@ -13,15 +13,13 @@ var depStubs = {
   winston: {
     error: function () {}
   },
-  divshot: {
-    createClient: function () {
-      return {
-        user: {
-          authenticate: function (callback) {
-            callback(null, 'my_token');
-          } 
+  '../divshot': {
+    api: {
+      user: {
+        authenticate: function (callback) {
+          callback(null, 'my_token');
         }
-      };
+      }
     }
   }
 };
