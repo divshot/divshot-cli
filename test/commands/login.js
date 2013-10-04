@@ -16,6 +16,8 @@ var depStubs = {
   '../divshot': {
     api: {
       user: {
+        credentials: {},
+        setCredentials: function () {},
         authenticate: function (callback) {
           callback(null, 'my_token');
         }
