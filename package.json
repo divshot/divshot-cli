@@ -1,7 +1,7 @@
 {
   "name": "divshot-cli",
   "description": "Application-Grade Static Web Hosting",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "dependencies": {
     "flatiron": "~0.3.8",
     "colors": "~0.6.2",
@@ -22,11 +22,9 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-jshint": "~0.6.4",
     "grunt-mocha-test": "~0.7.0",
-    "request": "~2.27.0",
     "chai": "~1.8.0",
     "proxyquire": "~0.5.1",
     "sinon": "~1.7.3",
-    "sinon-chai": "~2.4.0",
     "mocksy": "~0.1.4"
   },
   "scripts": {
