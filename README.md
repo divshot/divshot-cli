@@ -1,5 +1,8 @@
+# ATTENTION! Currently Unusable.
+
 Divshot CLI
 ===========
+
 
 CLI for Divshot
 
