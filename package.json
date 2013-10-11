@@ -8,7 +8,7 @@
     "lodash.defaults": "~2.2.0",
     "winston": "~0.7.2",
     "regular": "~0.1.2",
-    "divshot": "~0.2.1",
+    "divshot": "~0.2.x",
     "lodash.find": "~2.2.1",
     "form-data": "~0.1.2",
     "stream-dir": "~0.1.0",
