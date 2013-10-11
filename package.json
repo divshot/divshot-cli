@@ -11,7 +11,8 @@
     "lodash.find": "~2.2.1",
     "form-data": "~0.1.2",
     "stream-dir": "~0.1.0",
-    "async": "~0.2.9"
+    "async": "~0.2.9",
+    "event-stream": "~3.0.16"
   },
   "devDependencies": {
     "cli-easy": "0.1.0",
