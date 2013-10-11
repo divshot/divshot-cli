@@ -1,4 +1,5 @@
 {
+  "name": "divshot-cli",
   "description": "Application-Grade Static Web Hosting",
   "version": "0.0.2",
   "dependencies": {
@@ -31,7 +32,6 @@
   "scripts": {
     "test": "grunt test"
   },
-  "name": "divshot-cli",
   "author": "Divshot",
   "homepage": "http://divshot.io",
   "repository": {

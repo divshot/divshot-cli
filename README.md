@@ -6,7 +6,7 @@ CLI for Divshot
 ## Install
 
 ```
-npm install divshot -g
+npm install divshot-cli -g
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ divshot logout
 divshot apps
 ```
 
-### Create App
+### Create an App
 
 ```
 divshot create [APP_NAME]
