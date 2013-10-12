@@ -2,16 +2,16 @@
 
 var path = require('path');
 var mkdirp = require('mkdirp');
+var defaults = require('lodash.defaults');
+var logger = require('../lib/logger');
 
 process.env.NODE_ENV = (process.env.NODE_ENV) ? process.env.NODE_ENV : 'production';
 
 var env = require('../lib/env');
-var _defaults = require('lodash.defaults');
 var divshotCli = require('../lib/divshot');
 var divshotDir = path.join(getUserHome(), '.divshot', 'config');
-var logger = require('../lib/logger');
 
-_defaults(process.env, env);
+defaults(process.env, env);
 
 // Create our .divshot directory
 mkdirp(divshotDir, function (err) {
