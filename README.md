@@ -11,7 +11,7 @@ CLI for Divshot
 From Repo
 
 ```
-npm install git+https://github.com/divshot/divshot-cli.git
+npm install git+https://github.com/divshot/divshot-cli.git -g
 ```
 
 From NPM
