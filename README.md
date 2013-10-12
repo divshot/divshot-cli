@@ -8,6 +8,14 @@ CLI for Divshot
 
 ## Install
 
+From Repo
+
+```
+npm install git+https://github.com/divshot/divshot-cli.git
+```
+
+From NPM
+
 ```
 npm install divshot-cli -g
 ```
