@@ -8,12 +8,13 @@
     "lodash.defaults": "~2.2.0",
     "winston": "~0.7.2",
     "regular": "~0.1.2",
-    "divshot": "~0.2.x",
+    "divshot": "~0.2.2",
     "lodash.find": "~2.2.1",
     "form-data": "~0.1.2",
     "stream-dir": "~0.1.0",
     "async": "~0.2.9",
-    "event-stream": "~3.0.16"
+    "event-stream": "~3.0.16",
+    "mkdirp": "~0.3.5"
   },
   "devDependencies": {
     "cli-easy": "0.1.0",
@@ -46,10 +47,10 @@
   ],
   "preferGlobal": "true",
   "bin": {
-    "divshot": "bin/divshot"
+    "divshot": "bin/divshot.js"
   },
-  "main": "bin/divshot",
+  "main": "bin/divshot.js",
   "engines": {
-    "node":"0.10"
+    "node": "0.10"
   }
 }
