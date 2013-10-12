@@ -8,7 +8,7 @@ CLI for Divshot
 
 ## Install
 
-From Repo
+Bleeding edge (latest and greatest)
 
 ```
 npm install git+https://github.com/divshot/divshot-cli.git -g
