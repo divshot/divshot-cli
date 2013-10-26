@@ -23,7 +23,8 @@
     "commander": "~2.0.0",
     "file": "~0.2.1",
     "lodash": "~2.2.1",
-    "promptly": "~0.2.0"
+    "promptly": "~0.2.0",
+    "superstatic": "~0.3.8"
   },
   "devDependencies": {
     "cli-easy": "0.1.0",
