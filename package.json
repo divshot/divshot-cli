@@ -1,7 +1,7 @@
 {
   "name": "divshot-cli",
   "description": "Application-Grade Static Web Hosting",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "dependencies": {
     "flatiron": "~0.3.8",
     "colors": "~0.6.2",
