@@ -8,7 +8,6 @@ var logger = require('../lib/logger');
 process.env.NODE_ENV = (process.env.NODE_ENV) ? process.env.NODE_ENV : 'production';
 
 var env = require('../lib/env');
-var divshotCli = require('../lib/divshot');
 var divshotDir = path.join(getUserHome(), '.divshot', 'config');
 
 defaults(process.env, env);
@@ -19,7 +18,7 @@ mkdirp(divshotDir, function (err) {
     return logger.error('Looks like we don\'t have access to your home directory. Please adjust your permissions before you continue');
   }
   
-  divshotCli.start();
+  require('../lib/divshot');
 });
 
 
