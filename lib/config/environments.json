@@ -1,9 +1,0 @@
-{
-  "supported": [
-    "development",
-    "staging",
-    "production"
-  ],
-  
-  "default": "production"
-}
