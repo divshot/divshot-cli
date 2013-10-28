@@ -1,19 +1,12 @@
 {
   "name": "divshot-cli",
   "description": "Application-Grade Static Web Hosting",
-  "version": "0.1.1",
+  "version": "0.1.12",
   "dependencies": {
-    "flatiron": "~0.3.8",
     "colors": "~0.6.2",
-    "lodash.defaults": "~2.2.0",
-    "winston": "~0.7.2",
     "regular": "~0.1.2",
     "divshot": "git+https://cd072d2b80b13b98bdf67a31d38948a485b82076:x-oauth-basic@github.com/divshot/divshot-api.git#master",
-    "lodash.find": "~2.2.1",
     "form-data": "~0.1.2",
-    "stream-dir": "~0.1.0",
-    "async": "~0.2.9",
-    "event-stream": "~3.0.16",
     "mkdirp": "~0.3.5",
     "glob": "~3.2.6",
     "archiver": "~0.4.10",
@@ -24,22 +17,14 @@
     "file": "~0.2.1",
     "lodash": "~2.2.1",
     "promptly": "~0.2.0",
-    "superstatic": "~0.3.8"
+    "superstatic": "~0.3.9"
   },
   "devDependencies": {
-    "cli-easy": "0.1.0",
-    "vows": "0.6.1",
-    "grunt": "~0.4.1",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-jshint": "~0.6.4",
-    "grunt-mocha-test": "~0.7.0",
-    "chai": "~1.8.0",
-    "proxyquire": "~0.5.1",
     "sinon": "~1.7.3",
     "mocksy": "~0.1.4"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "echo 'test it, someday.'"
   },
   "author": "Divshot",
   "homepage": "http://divshot.io",
