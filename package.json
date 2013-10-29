@@ -18,7 +18,8 @@
     "lodash": "~2.2.1",
     "promptly": "~0.2.0",
     "superstatic": "~0.3.9",
-    "optimist": "~0.6.0"
+    "optimist": "~0.6.0",
+    "event-stream": "~3.0.16"
   },
   "devDependencies": {
     "sinon": "~1.7.3",
