@@ -22,7 +22,9 @@
     "optimist": "~0.6.0",
     "async": "~0.2.9",
     "slug": "~0.3.3",
-    "fstream-ignore": "0.0.7"
+    "fstream-ignore": "0.0.7",
+    "pretty-print": "0.1.x",
+    "feedback": "0.1.x"
   },
   "devDependencies": {
     "sinon": "~1.7.3",
