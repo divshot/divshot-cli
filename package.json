@@ -17,9 +17,11 @@
     "file": "~0.2.1",
     "lodash": "~2.2.1",
     "promptly": "~0.2.0",
-    "superstatic": "~0.3.9",
+    "event-stream": "~3.0.16",
+    "superstatic": "0.3.10",
     "optimist": "~0.6.0",
-    "event-stream": "~3.0.16"
+    "async": "~0.2.9",
+    "slug": "~0.3.3"
   },
   "devDependencies": {
     "sinon": "~1.7.3",
