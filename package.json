@@ -1,10 +1,10 @@
 {
   "name": "divshot-cli",
   "description": "Application-Grade Static Web Hosting",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "dependencies": {
     "colors": "~0.6.2",
-    "regular": "~0.1.2",
+    "regular": "~0.1.3",
     "divshot": "git+https://cd072d2b80b13b98bdf67a31d38948a485b82076:x-oauth-basic@github.com/divshot/divshot-api.git#master",
     "form-data": "~0.1.2",
     "mkdirp": "~0.3.5",
