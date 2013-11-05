@@ -3,26 +3,26 @@ Divshot CLI
 
 CLI for Divshot
 
-* [apps]() - list your apps
-* [auth:token]() - print out your access token
-* [config]() - list, set, or remove keys and values from your app
-* [config:add]() - add a value to the config file
-* [config:remove]() - remove a value from the config file
-* [create]() - create a new app
-* [destroy]() - delete a divshot.io app
-* [domains]() - list your domains
-* [domains:add]() - add a custom domain to your app
-* [domains:remove]() - remove a custom domain from your app
-* [help]() - get help with common Divshot.io commands
-* [init]() - step by step guide to initiate an app in the current directory
-* [login]() - login to Divshot.io
-* [logout]() - logout from Divshot.io
-* [promote]() - promote one environment to another
-* [push]() - deploy your app to the specified environment
-* [rename]() - change the name of an app
-* [rollback]() - rollback an environment to a previous release
-* [server]() - start server for local dev
-* [status]() - show release info for each environment
+* [apps](https://github.com/divshot/divshot-cli/blob/master/README.md#apps) - list your apps
+* [auth:token](https://github.com/divshot/divshot-cli/blob/master/README.md#authtoken) - print out your access token
+* [config](https://github.com/divshot/divshot-cli/blob/master/README.md#config) - list, set, or remove keys and values from your app
+* [config:add](https://github.com/divshot/divshot-cli/blob/master/README.md#configadd) - add a value to the config file
+* [config:remove](https://github.com/divshot/divshot-cli/blob/master/README.md#configremove) - remove a value from the config file
+* [create](https://github.com/divshot/divshot-cli/blob/master/README.md#create) - create a new app
+* [destroy](https://github.com/divshot/divshot-cli/blob/master/README.md#destroy) - delete a divshot.io app
+* [domains](https://github.com/divshot/divshot-cli/blob/master/README.md#domains) - list your domains
+* [domains:add](https://github.com/divshot/divshot-cli/blob/master/README.md#domainsadd) - add a custom domain to your app
+* [domains:remove](https://github.com/divshot/divshot-cli/blob/master/README.md#domainsremove) - remove a custom domain from your app
+* [help](https://github.com/divshot/divshot-cli/blob/master/README.md#help) - get help with common Divshot.io commands
+* [init](https://github.com/divshot/divshot-cli/blob/master/README.md#init) - step by step guide to initiate an app in the current directory
+* [login](https://github.com/divshot/divshot-cli/blob/master/README.md#login) - login to Divshot.io
+* [logout](https://github.com/divshot/divshot-cli/blob/master/README.md#logout) - logout from Divshot.io
+* [promote](https://github.com/divshot/divshot-cli/blob/master/README.md#promote) - promote one environment to another
+* [push](https://github.com/divshot/divshot-cli/blob/master/README.md#push) - deploy your app to the specified environment
+* [rename](https://github.com/divshot/divshot-cli/blob/master/README.md#rename) - change the name of an app
+* [rollback](https://github.com/divshot/divshot-cli/blob/master/README.md#rollback) - rollback an environment to a previous release
+* [server](https://github.com/divshot/divshot-cli/blob/master/README.md#server) - start server for local dev
+* [status](https://github.com/divshot/divshot-cli/blob/master/README.md#status) - show release info for each environment
 
 
 ## Install
