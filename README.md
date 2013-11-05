@@ -3,7 +3,7 @@ Divshot CLI
 
 CLI for Divshot
 
-#### [Commands]()
+#### [Commands](https://github.com/divshot/divshot-cli/blob/master/README.md#commands-1)
 
 * [apps](https://github.com/divshot/divshot-cli/blob/master/README.md#apps) - list your apps
 * [auth:token](https://github.com/divshot/divshot-cli/blob/master/README.md#authtoken) - print out your access token
@@ -56,7 +56,7 @@ npm install divshot-cli -g
 divshot apps
 ```
 
-List your apps.
+List your Divshot.io apps.
 
 ### auth:token
 
@@ -64,7 +64,7 @@ List your apps.
 divshot auth:token
 ```
 
-Print out your access token.
+Print out your access token. This token is used to authenticate you with the Divshot api.
 
 ### config
 
@@ -72,7 +72,7 @@ Print out your access token.
 divshot config
 ```
 
-List, set, or remove keys and values from your app.
+List the keys and values from your Divshot.io app config file. See [Divshot.io configuration reference](http://docs.divshot.io/guides/configuration) for more details on these values.
 
 ### config:add
 
@@ -80,7 +80,7 @@ List, set, or remove keys and values from your app.
 divshot config:add [key] [value]
 ```
 
-Add a value to the config file.
+Add a value to your Divshot.io app config file. See [Divshot.io configuration reference](http://docs.divshot.io/guides/configuration) for more details on these values.
 
 ### config:remove
 
@@ -88,7 +88,7 @@ Add a value to the config file.
 divshot config:remove [key]
 ```
 
-Remove a value from the config file.
+Remove a value from your Divshot.io app config file. See [Divshot.io configuration reference](http://docs.divshot.io/guides/configuration) for more details on these values.
 
 ### create
 
@@ -96,7 +96,7 @@ Remove a value from the config file.
 divshot create [app name]
 ```
 
-Create a new app.
+Create a new Divshot.io app. If no app nam eis provided, it attempts to read from your Divshot.io configuration file. It that does not exist, it will prompt you for an app name. You can easily create a new Divshot.io app locally and remotely by using [` divshot init `](https://github.com/divshot/divshot-cli/blob/master/README.md#init).
 
 ### destroy
 
@@ -105,7 +105,7 @@ Create a new app.
 dishot destroy [app name]
 ```
 
-Delete a divshot.io app.
+Delete a Divshot.io app. This is permanent and immediate. It removes not only your files, but it disables the subdomain associated with the application.
 
 ### domains
 
@@ -113,7 +113,7 @@ Delete a divshot.io app.
 divshot domains
 ```
 
-List your domains.
+See a list of all custom domains associated with your app.
 
 ### domains:add
 
@@ -121,7 +121,7 @@ List your domains.
 divshot domains:add [domain]
 ```
 
-Add a custom domain to your app.
+Add a custom domain to your app. You may see a list of your domains with [` divshot domains `](https://github.com/divshot/divshot-cli/blob/master/README.md#domains)
 
 ### domains:remove
 
@@ -129,7 +129,7 @@ Add a custom domain to your app.
 divshot domains:remove [domain]
 ```
 
-Remove a custom domain from your app.
+Remove a custom domain from your app. You may see a list of your domains with [` divshot domains `](https://github.com/divshot/divshot-cli/blob/master/README.md#domains)
 
 ### help
 
@@ -137,7 +137,13 @@ Remove a custom domain from your app.
 divshot help
 ```
 
-Get help with common Divshot.io commands.
+Get help with common Divshot.io commands. Lists all the available commands.
+
+If you need help with a specific command, you may specify that command after the word *help*.
+
+```
+divshot help [command]
+```
 
 ### init
 
