@@ -113,7 +113,7 @@ Delete a Divshot.io app. This is permanent and immediate. It removes not only yo
 divshot domains
 ```
 
-See a list of all custom domains associated with your app.
+See a list of all custom domains associated with your app. For more in depth usage, see [Divshot.io Custom Domains](http://docs.divshot.io/guides/domains)
 
 ### domains:add
 
@@ -121,7 +121,7 @@ See a list of all custom domains associated with your app.
 divshot domains:add [domain]
 ```
 
-Add a custom domain to your app. You may see a list of your domains with [` divshot domains `](https://github.com/divshot/divshot-cli/blob/master/README.md#domains)
+Add a custom domain to your app. You may see a list of your domains with [` divshot domains `](https://github.com/divshot/divshot-cli/blob/master/README.md#domains). For more in depth usage, see [Divshot.io Custom Domains](http://docs.divshot.io/guides/domains)
 
 ### domains:remove
 
@@ -129,7 +129,7 @@ Add a custom domain to your app. You may see a list of your domains with [` divs
 divshot domains:remove [domain]
 ```
 
-Remove a custom domain from your app. You may see a list of your domains with [` divshot domains `](https://github.com/divshot/divshot-cli/blob/master/README.md#domains)
+Remove a custom domain from your app. You may see a list of your domains with [` divshot domains `](https://github.com/divshot/divshot-cli/blob/master/README.md#domains). For more in depth usage, see [Divshot.io Custom Domains](http://docs.divshot.io/guides/domains)
 
 ### help
 
