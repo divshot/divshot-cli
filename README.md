@@ -31,7 +31,7 @@ CLI for Divshot
 npm install divshot-cli -g
 ```
 
-## Usage
+## Commands
 
 ### apps
 
@@ -40,3 +40,91 @@ List your apps
 ```
 divshot apps
 ```
+
+### auth:token
+
+print out your access token
+
+```
+divshot auth:token
+```
+
+### config
+
+list, set, or remove keys and values from your app
+
+```
+divshot config
+```
+
+### config:add
+
+add a value to the config file
+
+```
+divshot config:add [key] [value]
+```
+
+### config:remove
+
+remove a value from the config file
+
+```
+divshot config:remove [key]
+```
+
+### create
+
+create a new app
+
+```
+divshot create [app name]
+```
+
+### destroy
+
+delete a divshot.io app
+
+```
+dishot destroy [app name]
+```
+
+### domains
+
+list your domains
+
+```
+divshot domains
+```
+
+### domains:add
+
+add a custom domain to your app
+
+```
+divshot domains:add [domain]
+```
+
+### domains:remove
+
+remove a custom domain from your app
+
+```
+divshot domains:remove [domain]
+```
+
+### help
+
+get help with common Divshot.io commands
+
+```
+divshot help
+```
+
+
+
+
+
+## Options
+
+
