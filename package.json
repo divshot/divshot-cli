@@ -1,7 +1,7 @@
 {
   "name": "divshot-cli",
   "description": "Application-Grade Static Web Hosting",
-  "version": "0.2.12",
+  "version": "0.2.13",
   "dependencies": {
     "colors": "~0.6.2",
     "regular": "~0.1.3",
