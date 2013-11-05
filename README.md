@@ -44,161 +44,167 @@ npm install divshot-cli -g
 
 ### apps
 
-List your apps
-
 ```
 divshot apps
 ```
 
-### auth:token
+List your apps.
 
-print out your access token
+### auth:token
 
 ```
 divshot auth:token
 ```
 
-### config
+Print out your access token.
 
-list, set, or remove keys and values from your app
+### config
 
 ```
 divshot config
 ```
 
-### config:add
+List, set, or remove keys and values from your app.
 
-add a value to the config file
+### config:add
 
 ```
 divshot config:add [key] [value]
 ```
 
-### config:remove
+Add a value to the config file.
 
-remove a value from the config file
+### config:remove
 
 ```
 divshot config:remove [key]
 ```
 
-### create
+Remove a value from the config file.
 
-create a new app
+### create
 
 ```
 divshot create [app name]
 ```
 
+Create a new app.
+
 ### destroy
 
-delete a divshot.io app
 
 ```
 dishot destroy [app name]
 ```
 
-### domains
+Delete a divshot.io app.
 
-list your domains
+### domains
 
 ```
 divshot domains
 ```
 
-### domains:add
+List your domains.
 
-add a custom domain to your app
+### domains:add
 
 ```
 divshot domains:add [domain]
 ```
 
-### domains:remove
+Add a custom domain to your app.
 
-remove a custom domain from your app
+### domains:remove
 
 ```
 divshot domains:remove [domain]
 ```
 
-### help
+Remove a custom domain from your app.
 
-get help with common Divshot.io commands
+### help
 
 ```
 divshot help
 ```
 
-### init
+Get help with common Divshot.io commands.
 
-step by step guide to initiate an app in the current directory
+### init
 
 ```
 divhshot init
 ```
 
-### login
+Step by step guide to initiate an app in the current directory.
 
-login to Divshot.io
+### login
 
 ```
 divshot login
 ```
 
-### logout
+Login to Divshot.io.
 
-logout from Divshot.io
+### logout
 
 ```
 divshot logout
 ```
 
-### promote
+Logout from Divshot.io.
 
-promote one environment to another
+### promote
 
 ```
 divshot promote [from env] [to env]
 ```
 
-### push
+Promote one environment to another.
 
-deploy your app to the specified environment
+### push
 
 ```
 divshot push [environment]
 ```
 
-### rename
+Deploy your app to the specified environment.
 
-change the name of an app
+### rename
 
 ```
 divshot rename [new app name]
 ```
 
-### rollback
+Change the name of an app.
 
-rollback an environment to a previous release
+### rollback
 
 ```
 divshot rollback [environment]
 ```
 
-### server
+Rollback an environment to a previous release.
 
-start server for local dev
+### server
 
 ```
 divshot server
 ```
 
-### status
+Start a server for local development. This local server mimics the capabilities of static sites running on [Divshot.io](http://divshot.io). Refer to the [Divshot.io documentation](http://docs.divshot.io/guides/configuration) for configuration instructions.
 
-show release info for each environment
+Server command options:
+
+* ` -p, --port [port]` - specify the port for the server to run. Defaults to *3474*
+* ` -h, --host [hostname]` - specify a custom hostname for your app to run at. Defaults to *localhost*
+
+### status
 
 ```
 divshot status [environment]
 ```
+
+show release info for each environment
 
