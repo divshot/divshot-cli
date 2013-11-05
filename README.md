@@ -39,7 +39,7 @@ CLI for Divshot
 * ` staging `
 * ` production ` - this is the default environment during app deployment
 
-Each environment is immediately available and deployent at the following url scheme: **http://[environment].[app name].divshot.io**.
+Each environment is immediately available and deployent at the following url scheme: **http://[environment].[app name].divshot.io**. You may reference [Divshot.io Builds and Environments](http://docs.divshot.io/guides/builds) for a more detailed explanation.
 
 
 ## Install
@@ -145,7 +145,14 @@ Get help with common Divshot.io commands.
 divhshot init
 ```
 
-Step by step guide to initiate an app in the current directory.
+Step by step guide to initiate an app in the current directory. The steps you are taken through are as follows:
+
+1. ` name ` - app name
+2. ` root ` - the root directory of the app relative to the current directory
+3. ` error page ` - the relative path or absolute url of an error/not foud page to display in in your app.
+4. ` create app ` - do you want to create  new app on Divshot.io upon completing these steps? (As opposed to only creating the app locally)
+
+Once your initiated your app, the *root* directory will now contain a ` divshot.json ` file with your settings. You may reference [Divshot.io configuration reference](http://docs.divshot.io/guides/configuration) for a more detailed description of this file.
 
 ### login
 
@@ -153,7 +160,7 @@ Step by step guide to initiate an app in the current directory.
 divshot login
 ```
 
-Login to Divshot.io.
+Login to your Divshot.io account.
 
 ### logout
 
@@ -161,7 +168,7 @@ Login to Divshot.io.
 divshot logout
 ```
 
-Logout from Divshot.io.
+Logout of your account.
 
 ### promote
 
@@ -169,7 +176,12 @@ Logout from Divshot.io.
 divshot promote [from env] [to env]
 ```
 
-Promote one environment to another.
+Promote one environment to another. A typical use case for this command would be to deploy your staging app to production without having to reploy all the files. See [environments](https://github.com/divshot/divshot-cli/blob/master/README.md#environments) for a list of available environments.
+
+Example promotions
+
+* ` divshot promote development staging ` - development -> staging
+* ` divshot promote staging production ` - staging -> production
 
 ### push
 
@@ -177,7 +189,7 @@ Promote one environment to another.
 divshot push [environment]
 ```
 
-Deploy your app to the specified environment. If no environment is given, we assume that you mean *production*. The entire push process takes as long as the number of files in your project. Once deployed, your app is immediately available. See [environments]() for a list of available environments.
+Deploy your app to the specified environment. If no environment is given, we assume that you mean *production*. The entire push process takes as long as the number of files in your project. Once deployed, your app is immediately available. See [environments](https://github.com/divshot/divshot-cli/blob/master/README.md#environments) for a list of available environments.
 
 ### rename
 
@@ -193,7 +205,7 @@ Rename your app. This changes the subomdain on Divshot.io and updates your confi
 divshot rollback [environment]
 ```
 
-Rollback the given environment to a previous release. This is useful when buggy code has been deployed. Divshot.io automatically detects what your previously release was and rollsback to that release. See [environments]() for a list of available environments.
+Rollback the given environment to a previous release. This is useful when buggy code has been deployed. Divshot.io automatically detects what your previously release was and rollsback to that release. See [environments](https://github.com/divshot/divshot-cli/blob/master/README.md#environments) for a list of available environments.
 
 ### server
 
@@ -214,5 +226,5 @@ Server command options:
 divshot status [environment]
 ```
 
-Show release info for each environment. If you no environment is specified, the latest release info will be listed for each enviornment. If an environment is specifed, it will list the last few releases for that environment. See [environments]() for a list of available environments.
+Show release info for each environment. If you no environment is specified, the latest release info will be listed for each enviornment. If an environment is specifed, it will list the last few releases for that environment. See [environments](https://github.com/divshot/divshot-cli/blob/master/README.md#environments) for a list of available environments.
 
