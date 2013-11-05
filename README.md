@@ -33,6 +33,14 @@ CLI for Divshot
 * ` --app [app name] ` - manually supply the Divshot.io app name
 * ` --no-color ` - strip all use of color in output
 
+####Environments
+
+* ` development `
+* ` staging `
+* ` production ` - this is the default environment during app deployment
+
+Each environment is immediately available and deployent at the following url scheme: **http://[environment].[app name].divshot.io**.
+
 
 ## Install
 
@@ -169,7 +177,7 @@ Promote one environment to another.
 divshot push [environment]
 ```
 
-Deploy your app to the specified environment.
+Deploy your app to the specified environment. If no environment is given, we assume that you mean *production*. The entire push process takes as long as the number of files in your project. Once deployed, your app is immediately available. See [environments]() for a list of available environments.
 
 ### rename
 
@@ -177,7 +185,7 @@ Deploy your app to the specified environment.
 divshot rename [new app name]
 ```
 
-Change the name of an app.
+Rename your app. This changes the subomdain on Divshot.io and updates your configuration file. It is permanent once complete.
 
 ### rollback
 
@@ -185,7 +193,7 @@ Change the name of an app.
 divshot rollback [environment]
 ```
 
-Rollback an environment to a previous release.
+Rollback the given environment to a previous release. This is useful when buggy code has been deployed. Divshot.io automatically detects what your previously release was and rollsback to that release. See [environments]() for a list of available environments.
 
 ### server
 
@@ -206,5 +214,5 @@ Server command options:
 divshot status [environment]
 ```
 
-show release info for each environment
+Show release info for each environment. If you no environment is specified, the latest release info will be listed for each enviornment. If an environment is specifed, it will list the last few releases for that environment. See [environments]() for a list of available environments.
 
