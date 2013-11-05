@@ -15,7 +15,7 @@ CLI for Divshot
 * [domains:remove]() - remove a custom domain from your app
 * [help]() - get help with common Divshot.io commands
 * [init]() - step by step guide to initiate an app in the current directory
-* [login]() - login to Divshot.io with the web.
+* [login]() - login to Divshot.io
 * [logout]() - logout from Divshot.io
 * [promote]() - promote one environment to another
 * [push]() - deploy your app to the specified environment
@@ -121,9 +121,77 @@ get help with common Divshot.io commands
 divshot help
 ```
 
+### init
 
+step by step guide to initiate an app in the current directory
 
+```
+divhshot init
+```
 
+### login
+
+login to Divshot.io
+
+```
+divshot login
+```
+
+### logout
+
+logout from Divshot.io
+
+```
+divshot logout
+```
+
+### promote
+
+promote one environment to another
+
+```
+divshot promote [from env] [to env]
+```
+
+### push
+
+deploy your app to the specified environment
+
+```
+divshot push [environment]
+```
+
+### rename
+
+change the name of an app
+
+```
+divshot rename [new app name]
+```
+
+### rollback
+
+rollback an environment to a previous release
+
+```
+divshot rollback [environment]
+```
+
+### server
+
+start server for local dev
+
+```
+divshot server
+```
+
+### status
+
+show release info for each environment
+
+```
+divshot status [environment]
+```
 
 ## Options
 
