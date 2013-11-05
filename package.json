@@ -24,7 +24,7 @@
     "slug": "~0.3.3",
     "fstream-ignore": "0.0.7",
     "pretty-print": "0.1.x",
-    "feedback": "0.1.x",
+    "feedback": "0.2.0",
     "moment": "~2.4.0"
   },
   "devDependencies": {
