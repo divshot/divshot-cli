@@ -3,7 +3,7 @@ Divshot CLI
 
 CLI for Divshot
 
-### [Commands]()
+#### [Commands]()
 
 * [apps](https://github.com/divshot/divshot-cli/blob/master/README.md#apps) - list your apps
 * [auth:token](https://github.com/divshot/divshot-cli/blob/master/README.md#authtoken) - print out your access token
@@ -27,11 +27,11 @@ CLI for Divshot
 * [status](https://github.com/divshot/divshot-cli/blob/master/README.md#status) - show release info for each environment
 * [-v]() - show current version of Divshot Cli
  
-### [Command Options]()
+#### Command Options
 
-* [--token]() - 
-* [--app]() - 
-* [--no-color]() - 
+* ` --token [token] ` - manually pass access token
+* ` --app [app name] ` - manually supply the Divshot.io app name
+* ` --no-color ` - strip all use of color in output
 
 
 ## Install
@@ -201,10 +201,4 @@ show release info for each environment
 ```
 divshot status [environment]
 ```
-
-## Options
-
-* ` --token [token] ` - manually pass access token
-* ` --app [app name] ` - manually supply the Divshot.io app name
-* ` --no-color ` - strip all use of color in output
 
