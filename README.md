@@ -27,17 +27,16 @@ CLI for Divshot
 
 ## Install
 
-
 ```
 npm install divshot-cli -g
 ```
 
 ## Usage
 
+### apps
 
-
-## Test
+List your apps
 
 ```
-grunt test
+divshot apps
 ```
