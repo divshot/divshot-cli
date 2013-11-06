@@ -8,6 +8,7 @@ var PORT = 7654;
 var mocksy = new Mocksy({port: PORT});
 var User = exports.User = require('../lib/user');
 var configDir = exports.configDir = path.resolve(__dirname, './fixtures');
+var fixturesPath = exports.fixturesPath = path.join(__dirname, './fixtures');
 
 feedback.test = true;
 
