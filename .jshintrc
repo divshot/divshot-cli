@@ -1,6 +1,10 @@
 {
   "expr": true,
-  "curly": true,
+  "curly": false,
+  "freeze": true,
+  "noarg": true,
+  "nonew": true,
+  "plusplus": true,
   "eqeqeq": true,
   "immed": true,
   "latedef": false,
@@ -12,6 +16,7 @@
   "boss": true,
   "eqnull": true,
   "node": true,
+  "quotmark": "single",
   "globals": {
     "require": true,
     "module": true,

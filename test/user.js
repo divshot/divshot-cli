@@ -36,7 +36,7 @@ describe('#User()', function() {
     expect(this.user.attributes).to.eql(config);
   });
   
-  it('saves all attibutes to the config file', function () {
+  it('saves all attributes to the config file', function () {
     var obj = {key: 'value'};
     this.user.attributes = obj;
     this.user.save();

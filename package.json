@@ -32,9 +32,11 @@
     "sinon": "~1.7.3",
     "mocksy": "~0.1.4",
     "mocha": "~1.14.0",
-    "expect.js": "~0.2.0"
+    "expect.js": "~0.2.0",
+    "jshint": "~2.3.0"
   },
   "scripts": {
+    "pretest": "node_modules/.bin/jshint ./lib",
     "test": "node_modules/.bin/mocha --recursive --reporter spec ./test"
   },
   "author": "Divshot",
