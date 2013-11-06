@@ -2,14 +2,24 @@ var path = require('path');
 var expect = require('expect.js');
 var setup = require('./_setup');
 var Cwd = require('../lib/cwd.js');
+var originalConfig = {
+  name: "test",
+  root: "./",
+  clean_urls: true
+};
 
 describe('#Cwd()', function() {
   beforeEach(function () {
-    this.cwd = new Cwd();
-    
     process.cwd = function () {
       return setup.fixturesPath;
     };
+    
+    this.cwd = new Cwd();
+  });
+  
+  afterEach(function () {
+    this.cwd.setConfig(originalConfig, true);
+    delete require.cache[this.cwd.filePath];
   });
   
   it('has a default config file name of divshot.json', function () {
@@ -25,10 +35,35 @@ describe('#Cwd()', function() {
   });
   
   it('gets the config file', function () {
-    expect(this.cwd.getConfig()).to.eql({
-      name: "test",
-      root: "./",
-      clean_urls: true
-    });
+    expect(this.cwd.getConfig()).to.eql(originalConfig);
+  });
+  
+  it('sets new values from and object in the config file', function () {
+    this.cwd.setConfig({name: 'new'});
+    expect(this.cwd.getConfig().name).to.be('new');
+  });
+  
+  it('sets the config value by overwriting all values', function () {
+    this.cwd.setConfig({only: 'me'}, true);
+    expect(this.cwd.getConfig()).to.eql({only: 'me'});
+  });
+  
+  it('sets a single config value', function () {
+    this.cwd.setConfigValue('name', 'new');
+    expect(this.cwd.getConfig().name).to.be('new');
+  });
+  
+  it('removes a single config value', function () {
+    this.cwd.removeConfigValue('name');
+    expect(this.cwd.getConfig().name).to.be(undefined);
+  });
+  
+  it('determines if the current directory has a config file', function () {
+    expect(this.cwd.hasConfig()).to.be(true);
+  });
+  
+  it('stringifies and object with 2 space tab whitespace', function () {
+    var stringified = this.cwd.stringify({name: 'test'});
+    expect(stringified).to.equal('{\n  "name": "test"\n}');
   });
 });
