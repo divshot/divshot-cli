@@ -1,31 +1,13 @@
 var path = require('path');
 var expect = require('expect.js');
-var program = require('../lib/divshot');
-var Mocksy = require('mocksy');
+var setup = require('./_setup');
 var _ = require('lodash');
-var feedback = require('feedback');
-var PORT = 7654;
-var mocksy = new Mocksy({port: PORT});
 
-var User = require('../lib/user');
-var Divshot = require('divshot');
-var configDir = path.resolve(__dirname, './fixtures');
-
-feedback.test = true;
-
-var api = Divshot.createClient({
-  token: 'token',
-  host: 'http://localhost:' + PORT
-});
-var app = program({
-  logger: feedback,
-  user: new User(configDir),
-  api: api
-});
+var app = setup.app();
 
 describe('cli init', function() {
   it('adds an instance of lodash to the app object', function () {
-    expect(app._).to.eql(require('lodash'));
+    expect(app._).to.eql(_);
   });
   
   it('adds an instance of loading to the app object', function () {
@@ -37,7 +19,7 @@ describe('cli init', function() {
   });
   
   it('adds an instance of user to the app object', function () {
-    expect(app.user instanceof User).to.be(true);
+    expect(app.user instanceof setup.User).to.be(true);
   });
   
   it('adds an instance of cwd to the app object', function () {
@@ -45,7 +27,7 @@ describe('cli init', function() {
   });
   
   it('adds an instance of the api to the app object', function () {
-    expect(app.api instanceof Divshot).to.be(true);
+    expect(app.api instanceof setup.Divshot).to.be(true);
   });
   
   it('adds the environments to the app object', function () {
@@ -69,15 +51,15 @@ describe('cli init', function() {
     expect(app.program.args).to.not.be(undefined);
   });
   
-  it('overwrites defaults with user provided optiosn', function () {
-    expect(app.api).to.eql(api);
+  it('overwrites defaults with user provided options', function () {
+    expect(app.api).to.eql(setup.api);
   });
   
   describe('program options', function() {
     it('exposes "-v" to get the version number', function (done) {
       app.program.emit('-v');
       
-      feedback.on('write', function (msg) {
+      setup.feedback.once('write', function (msg) {
         expect(msg).to.be(require('../package').version);
         done();
       });
