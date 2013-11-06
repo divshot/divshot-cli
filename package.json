@@ -30,10 +30,12 @@
   },
   "devDependencies": {
     "sinon": "~1.7.3",
-    "mocksy": "~0.1.4"
+    "mocksy": "~0.1.4",
+    "mocha": "~1.14.0",
+    "expect.js": "~0.2.0"
   },
   "scripts": {
-    "test": "echo 'test it, someday.'"
+    "test": "node_modules/.bin/mocha --recursive --reporter spec ./test"
   },
   "author": "Divshot",
   "homepage": "http://divshot.io",

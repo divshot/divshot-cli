@@ -12,5 +12,8 @@ mkdirp(path.join(homdeDir(), '.divshot', 'config'), function (err) {
     return feedback.error('Looks like we don\'t have access to your home directory. Please adjust your permissions before you continue');
   }
   
-  startApp();
+  startApp({
+    host: 'https://api.divshot.com',
+    // host: 'http://api.dev.divshot.com:9393'
+  });
 });
