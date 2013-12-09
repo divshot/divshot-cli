@@ -74,6 +74,10 @@ describe('cli init', function() {
       expectLongFlag('--host', app.program.options);
     });
     
+    it('exposes "--logging" to enable print out of http requests', function () {
+      expectLongFlag('--logging', app.program.options);
+    });
+    
     it('exposes "--token" to manually pass the user access token', function () {
       expectLongFlag('--token', app.program.options);
     });
