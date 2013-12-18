@@ -20,6 +20,7 @@ CLI for Divshot
 * [login](https://github.com/divshot/divshot-cli/blob/master/README.md#login) - login to Divshot.io
 * [logout](https://github.com/divshot/divshot-cli/blob/master/README.md#logout) - logout from Divshot.io
 * [promote](https://github.com/divshot/divshot-cli/blob/master/README.md#promote) - promote one environment to another
+* [protect] (https://github.com/divshot/divshot-cli/blob/master/README.md#protect) - add http basic auth to any environment
 * [push](https://github.com/divshot/divshot-cli/blob/master/README.md#push) - deploy your app to the specified environment
 * [rename](https://github.com/divshot/divshot-cli/blob/master/README.md#rename) - change the name of an app
 * [rollback](https://github.com/divshot/divshot-cli/blob/master/README.md#rollback) - rollback an environment to a previous release
@@ -188,6 +189,14 @@ Example promotions
 
 * ` divshot promote development staging ` - development -> staging
 * ` divshot promote staging production ` - staging -> production
+
+### protect
+
+```
+divshot protect [environment] [username:password]
+```
+
+Protect your development and staging and environments with [http authentication](http://en.wikipedia.org/wiki/Basic_access_authentication).
 
 ### push
 
