@@ -13,7 +13,7 @@ mkdirp(path.join(homdeDir(), '.divshot', 'config'), function (err) {
   }
   
   startApp({
-    host: 'https://api.divshot.com',
-    // host: 'http://api.dev.divshot.com:9393'
+    // host: 'https://api.divshot.com',
+    host: 'http://api.dev.divshot.com:9393'
   });
 });
