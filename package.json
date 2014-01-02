@@ -29,7 +29,8 @@
     "through": "~2.3.4",
     "chalk": "~0.4.0",
     "jsun": "~0.1.0",
-    "split": "~0.2.10"
+    "split": "~0.2.10",
+    "require-dir": "~0.1.0"
   },
   "devDependencies": {
     "sinon": "~1.7.3",
