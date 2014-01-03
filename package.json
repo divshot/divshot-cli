@@ -32,7 +32,8 @@
     "split": "~0.2.10",
     "shrub": "~0.2.0",
     "sizer": "0.1.x",
-    "tarzan": "~0.1.0"
+    "tarzan": "~0.1.0",
+    "drainer": "~0.1.0"
   },
   "devDependencies": {
     "sinon": "~1.7.3",
