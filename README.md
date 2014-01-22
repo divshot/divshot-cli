@@ -20,7 +20,7 @@ CLI for Divshot
 * [login](https://github.com/divshot/divshot-cli/blob/master/README.md#login) - login to Divshot.io
 * [logout](https://github.com/divshot/divshot-cli/blob/master/README.md#logout) - logout from Divshot.io
 * [promote](https://github.com/divshot/divshot-cli/blob/master/README.md#promote) - promote one environment to another
-* [protect] (https://github.com/divshot/divshot-cli/blob/master/README.md#protect) - add http basic auth to any environment
+* [protect](https://github.com/divshot/divshot-cli/blob/master/README.md#protect) - add http basic auth to any environment
 * [push](https://github.com/divshot/divshot-cli/blob/master/README.md#push) - deploy your app to the specified environment
 * [rename](https://github.com/divshot/divshot-cli/blob/master/README.md#rename) - change the name of an app
 * [rollback](https://github.com/divshot/divshot-cli/blob/master/README.md#rollback) - rollback an environment to a previous release
