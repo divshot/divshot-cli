@@ -35,7 +35,7 @@
     "tarzan": "0.1.x",
     "drainer": "~0.1.0",
     "tiny-emitter": "0.1.x",
-    "divshot-upload": "~0.1.0"
+    "divshot-upload": "0.1.x"
   },
   "devDependencies": {
     "sinon": "~1.7.3",
