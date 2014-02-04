@@ -4,7 +4,7 @@ var path = require('path');
 var mkdirp = require('mkdirp');
 var feedback = require('feedback');
 var chalk = require('chalk');
-var startApp = require('../lib/divshot');
+var cli = require('../lib/divshot');
 var homdeDir = require('home-dir');
 
 // Create our .divshot directory
@@ -13,7 +13,7 @@ mkdirp(path.join(homdeDir(), '.divshot', 'config'), function (err) {
     return feedback.error('Looks like we don\'t have access to your home directory. Please adjust your permissions before you continue');
   }
   
-  startApp({
+  cli({
    host: 'https://api.divshot.com',
     // host: 'http://api.dev.divshot.com:9393'
   });
