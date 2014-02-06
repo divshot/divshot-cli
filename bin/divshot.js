@@ -5,13 +5,17 @@ var minimist = require('minimist');
 var argv = minimist(process.argv.slice(2));
 
 // Run command
-divshot(divshot._command(argv), function () {
-  console.log('ALL DONE!!!!!!!!!!!!!!!');
-});
+divshot(divshot._command(argv));
 
+// divshot.config.add('me', 'you', function () {});
+// divshot.config.remove('me', function () {});
 
 // divshot.apps(function (err, apps) {
-  
+//   console.log('callback done');
+// });
+
+// divshot.auth.token(function (err, token) {
+//   console.log(token);
 // });
 
 // divshot.create('app-name', {/*options here*/}, function (err, apps) {
