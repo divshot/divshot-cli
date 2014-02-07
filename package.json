@@ -33,7 +33,7 @@
     "shrub": "~0.2.0",
     "sizer": "0.1.x",
     "tarzan": "0.1.x",
-    "drainer": "~0.1.0",
+    "drainer": "~0.2.1",
     "tiny-emitter": "0.1.x",
     "divshot-upload": "0.1.x",
     "minimist": "0.0.5"
