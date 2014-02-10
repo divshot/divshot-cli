@@ -36,7 +36,8 @@
     "drainer": "~0.2.1",
     "tiny-emitter": "0.1.x",
     "divshot-upload": "0.1.x",
-    "minimist": "0.0.5"
+    "minimist": "0.0.5",
+    "args-list": "~0.3.1"
   },
   "devDependencies": {
     "sinon": "~1.7.3",
