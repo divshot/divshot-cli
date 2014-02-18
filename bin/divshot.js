@@ -1,8 +1,29 @@
 #!/usr/bin/env node
 
-var divshot = require('../lib');
-var minimist = require('minimist');
-var argv = minimist(process.argv.slice(2));
+var cli = require('../index.js');
 
-// Run command
-divshot(divshot._command(argv));
+cli.run(process.argv);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var divshot = require('../lib');
+// var minimist = require('minimist');
+// var argv = minimist(process.argv.slice(2));
+
+// // Run command
+// divshot(divshot._command(argv));
