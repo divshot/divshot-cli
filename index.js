@@ -14,7 +14,7 @@ var API_HOST = 'https://api.divshot.com';
 var cliConfigDirectory = path.join(homeDir(), '.divshot');
 var user = new User(cliConfigDirectory);
 var cwd = new Cwd();
-var title = fs.readFileSync(__dirname + '/lib/help/logo.txt')
+var title = fs.readFileSync(__dirname + '/lib/logo.txt')
 var description = [
   'Application-Grade Static Web Hosting.\n  ',
   '  Host single-page apps and static sites with',
@@ -51,7 +51,7 @@ cli.flag('-t', '--token')
   });
 
 // Helpers
-cli.helper('authenticate', function (command, done) {
+cli.method('authenticate', function (command, done) {
   if (!cli.user.authenticated()) return done(cli.errors.NOT_AUTHENTICATED);
   done();
 });
