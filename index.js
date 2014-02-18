@@ -16,7 +16,7 @@ var user = new User(cliConfigDirectory);
 var cwd = new Cwd();
 var title = fs.readFileSync(__dirname + '/lib/logo.txt')
 var description = [
-  'Application-Grade Static Web Hosting.\n  ',
+  'Application-Grade Static Web Hosting\n  ',
   '  Host single-page apps and static sites with',
   '  all the power of a modern application platform.'
 ].join('\n');
