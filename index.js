@@ -46,7 +46,7 @@ cli.flag('-a', '--app')
 cli.flag('-t', '--token')
   .description('override your current user authentication token')
   .handler(function (token) {
-    cli.user.attributes.token = token;
+    cli.user.set('token', token);
     cli.api.setToken(token);
   });
 
