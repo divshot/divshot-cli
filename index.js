@@ -65,6 +65,9 @@ cli.method('authenticate', function (command, done) {
 });
 
 cli.catchAll(function (type, attemptedCommand) {
+  // Undefined command
+  if (!attemptedCommand) return cli.commands.help({debug: true});
+  
   cli.log();
   cli.log(format.bold('"' + attemptedCommand + '"') + ' is not a Divshot ' + type + '.');
   cli.log('Please use ' + format.bold('"divshot help"') + ' for a list of Divshot commands.');
