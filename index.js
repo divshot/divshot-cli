@@ -50,6 +50,14 @@ cli.flag('-t', '--token')
     cli.api.setToken(token);
   });
 
+cli.flag('-v', '--version')
+  .description('show the CLI version number')
+  .exit(true)
+  .handler(function () {
+    var package = require('./package.json');
+    cli.log(package.version);
+  });
+
 // Helpers
 cli.method('authenticate', function (command, done) {
   if (!cli.user.authenticated()) return done(cli.errors.NOT_AUTHENTICATED);
