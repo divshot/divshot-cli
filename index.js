@@ -78,23 +78,6 @@ cli.method('version', function (command, done) {
     
     done();
   });
-  
-  // var remotePackage = {};
-  // var localPackage = require('./package.json');
-  
-  // try {
-  //   var remotePackage = JSON.parse(body);
-  // }
-  // catch (e) {}
-  // finally {
-  //   if (semver.gt(remotePackage.version || localPackage.version, localPackage.version)) {
-  //     cli.log();
-  //     cli.log(format.yellow('Attention: ') + 'A new version of Divshot CLI availble (' + remotePackage.version + ').\nUpdate with ' + format.bold('"npm install divshot-cli -g"'));
-  //     cli.log();
-  //   }
-    
-  //   done();
-  // }
 });
 
 cli.catchAll(function (type, attemptedCommand) {
