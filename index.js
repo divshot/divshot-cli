@@ -9,7 +9,7 @@ var Cwd = require('./lib/cwd');
 var commands = require('./lib/commands');
 var errors = require('./lib/errors');
 
-var API_HOST = 'https://api.divshot.com';
+var API_HOST = process.env.API_HOST || 'https://api.divshot.com';
 
 var cliConfigDirectory = path.join(homeDir(), '.divshot');
 var user = new User(cliConfigDirectory);
