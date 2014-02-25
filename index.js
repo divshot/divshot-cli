@@ -80,6 +80,8 @@ cli.method('version', function (command, done) {
   });
 });
 
+cli.beforeAll('version');
+
 cli.catchAll(function (type, attemptedCommand) {
   // Undefined command
   if (!attemptedCommand) return cli.commands.help({debug: true});
