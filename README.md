@@ -26,22 +26,21 @@ CLI for Divshot
 * [rollback](https://github.com/divshot/divshot-cli/blob/master/README.md#rollback) - rollback an environment to a previous release
 * [server](https://github.com/divshot/divshot-cli/blob/master/README.md#server) - start server for local dev
 * [status](https://github.com/divshot/divshot-cli/blob/master/README.md#status) - show release info for each environment
-* [-v]() - show current version of Divshot Cli
- 
+
 #### Command Options
 
-* ` --token [token] ` - manually pass access token
-* ` --app [app name] ` - manually supply the Divshot.io app name
-* ` --no-color ` - strip all use of color in output
+* `-h, --help` - show the help menu
+* `-v, --version` - show current version of Divshot Cli
+* `-t, --token [token] ` - manually pass access token
+* `-a, --app [app name] ` - manually supply the Divshot.io app name
 
 ####Environments
 
-* ` development `
+* ` development ` - this is the default environment during app deployment
 * ` staging `
-* ` production ` - this is the default environment during app deployment
+* ` production `
 
 Each environment is immediately available and deployent at the following url scheme: **http://[environment].[app name].divshot.io**. You may reference [Divshot.io Builds and Environments](http://docs.divshot.io/guides/builds) for a more detailed explanation.
-
 
 ## Install
 

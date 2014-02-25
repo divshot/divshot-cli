@@ -6,8 +6,11 @@ var Divshot = require('divshot');
 var format = require('chalk');
 var User = require('./lib/user');
 var Cwd = require('./lib/cwd');
+var Package = require('./lib/package');
 var commands = require('./lib/commands');
 var errors = require('./lib/errors');
+var semver = require('semver');
+var format = require('chalk');
 
 var API_HOST = process.env.API_HOST || 'https://api.divshot.com';
 
@@ -33,6 +36,7 @@ var cli = Nash.createCli({
   }),
   user: user,
   cwd: cwd,
+  package: new Package(user),
   errors: errors
 });
 
@@ -50,13 +54,36 @@ cli.flag('-t', '--token')
     cli.api.setToken(token);
   });
 
+cli.flag('-v', '--version')
+  .description('show the CLI version number')
+  .exit(true)
+  .handler(function () {
+    var package = require('./package.json');
+    cli.log(package.version);
+  });
+
 // Helpers
 cli.method('authenticate', function (command, done) {
   if (!cli.user.authenticated()) return done(cli.errors.NOT_AUTHENTICATED);
   done();
 });
 
+cli.method('version', function (command, done) {
+  cli.package.hasLatestVersion(function (err, hasLatestVersion) {
+    if (!hasLatestVersion) {
+      cli.log();
+      cli.log(format.yellow('Attention: ') + 'A new version of Divshot CLI availble (' + cli.package.version + ').\nUpdate with ' + format.bold('"npm install divshot-cli -g"'));
+      cli.log();
+    }
+    
+    done();
+  });
+});
+
 cli.catchAll(function (type, attemptedCommand) {
+  // Undefined command
+  if (!attemptedCommand) return cli.commands.help({debug: true});
+  
   cli.log();
   cli.log(format.bold('"' + attemptedCommand + '"') + ' is not a Divshot ' + type + '.');
   cli.log('Please use ' + format.bold('"divshot help"') + ' for a list of Divshot commands.');
