@@ -1,7 +1,7 @@
 {
   "name": "divshot-cli",
   "description": "CLI for Divshot.io",
-  "version": "0.6.10",
+  "version": "0.6.11",
   "dependencies": {
     "regular": "~0.1.3",
     "divshot-api": "0.6.x",
@@ -20,7 +20,8 @@
     "tarzan": "0.1.x",
     "divshot-upload": "0.1.x",
     "nash": "0.2.x",
-    "semver": "2.2.x"
+    "semver": "2.2.x",
+    "mkdirp": "^0.3.5"
   },
   "devDependencies": {
     "sinon": "~1.7.3",
