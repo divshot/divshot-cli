@@ -6,6 +6,7 @@ var Divshot = require('divshot-api');
 var format = require('chalk');
 var User = require('./lib/user');
 var Cwd = require('./lib/cwd');
+var environments = require('./lib/environments');
 var Package = require('./lib/package');
 var commands = require('./lib/commands');
 var errors = require('./lib/errors');
@@ -37,7 +38,8 @@ var cli = Nash.createCli({
   user: user,
   cwd: cwd,
   package: new Package(user),
-  errors: errors
+  errors: errors,
+  environments: environments
 });
 
 // Flags
