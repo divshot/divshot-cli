@@ -64,6 +64,12 @@ cli.flag('-v', '--version')
     cli.log(package.version);
   });
 
+cli.flag('-c', '--config')
+  .description('use a different config file')
+  .handler(function (filename) {
+    cli.cwd.setConfigFilename(filename)
+  });
+
 // Helpers
 cli.method('authenticate', function (command, done) {
   if (!cli.user.authenticated()) return done(cli.errors.NOT_AUTHENTICATED);
