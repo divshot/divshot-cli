@@ -14,6 +14,7 @@ var semver = require('semver');
 var format = require('chalk');
 
 var API_HOST = process.env.API_HOST || 'https://api.divshot.com';
+// var API_HOST = process.env.API_HOST || 'http://api.dev.divshot.com:9393';
 
 var cliConfigDirectory = path.join(homeDir(), '.divshot');
 var user = new User(cliConfigDirectory);

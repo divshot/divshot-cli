@@ -8,7 +8,7 @@
     "request": "2.27.x",
     "lodash": "~2.2.1",
     "promptly": "~0.2.0",
-    "superstatic": "0.5.x",
+    "superstatic": "0.6.x",
     "async": "~0.2.9",
     "slug": "~0.3.3",
     "feedback": "0.3.0",
