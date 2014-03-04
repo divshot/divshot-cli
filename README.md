@@ -19,7 +19,7 @@ CLI for Divshot
 * [init](https://github.com/divshot/divshot-cli/blob/master/README.md#init) - step by step guide to initiate an app in the current directory
 * [login](https://github.com/divshot/divshot-cli/blob/master/README.md#login) - login to Divshot.io
 * [logout](https://github.com/divshot/divshot-cli/blob/master/README.md#logout) - logout from Divshot.io
-* [open]() - open the current app in your default browser
+* [open](#open) - open the current app in your default browser
 * [promote](https://github.com/divshot/divshot-cli/blob/master/README.md#promote) - promote one environment to another
 * [protect](https://github.com/divshot/divshot-cli/blob/master/README.md#protect) - add http basic auth to any environment
 * [push](https://github.com/divshot/divshot-cli/blob/master/README.md#push) - deploy your app to the specified environment
