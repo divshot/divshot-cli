@@ -1,32 +1,31 @@
-Divshot CLI
-===========
+# Divshot CLI
 
 CLI for Divshot
 
-#### [Commands](https://github.com/divshot/divshot-cli/blob/master/README.md#commands-1)
+#### [Commands](#commands-1)
 
-* [apps](https://github.com/divshot/divshot-cli/blob/master/README.md#apps) - list your apps
-* [auth:token](https://github.com/divshot/divshot-cli/blob/master/README.md#authtoken) - print out your access token
-* [config](https://github.com/divshot/divshot-cli/blob/master/README.md#config) - list, set, or remove keys and values from your app
-* [config:add](https://github.com/divshot/divshot-cli/blob/master/README.md#configadd) - add a value to the config file
-* [config:remove](https://github.com/divshot/divshot-cli/blob/master/README.md#configremove) - remove a value from the config file
-* [create](https://github.com/divshot/divshot-cli/blob/master/README.md#create) - create a new app
-* [destroy](https://github.com/divshot/divshot-cli/blob/master/README.md#destroy) - delete a divshot.io app
-* [domains](https://github.com/divshot/divshot-cli/blob/master/README.md#domains) - list your domains
-* [domains:add](https://github.com/divshot/divshot-cli/blob/master/README.md#domainsadd) - add a custom domain to your app
-* [domains:remove](https://github.com/divshot/divshot-cli/blob/master/README.md#domainsremove) - remove a custom domain from your app
-* [help](https://github.com/divshot/divshot-cli/blob/master/README.md#help) - get help with common Divshot.io commands
-* [init](https://github.com/divshot/divshot-cli/blob/master/README.md#init) - step by step guide to initiate an app in the current directory
-* [login](https://github.com/divshot/divshot-cli/blob/master/README.md#login) - login to Divshot.io
-* [logout](https://github.com/divshot/divshot-cli/blob/master/README.md#logout) - logout from Divshot.io
+* [apps](#apps) - list your apps
+* [auth:token](#authtoken) - print out your access token
+* [config](#config) - list, set, or remove keys and values from your app
+* [config:add](#configadd) - add a value to the config file
+* [config:remove](#configremove) - remove a value from the config file
+* [create](#create) - create a new app
+* [destroy](#destroy) - delete a divshot.io app
+* [domains](#domains) - list your domains
+* [domains:add](#domainsadd) - add a custom domain to your app
+* [domains:remove](#domainsremove) - remove a custom domain from your app
+* [help](#help) - get help with common Divshot.io commands
+* [init](#init) - step by step guide to initiate an app in the current directory
+* [login](#login) - login to Divshot.io
+* [logout](#logout) - logout from Divshot.io
 * [open](#open) - open the current app in your default browser
-* [promote](https://github.com/divshot/divshot-cli/blob/master/README.md#promote) - promote one environment to another
-* [protect](https://github.com/divshot/divshot-cli/blob/master/README.md#protect) - add http basic auth to any environment
-* [push](https://github.com/divshot/divshot-cli/blob/master/README.md#push) - deploy your app to the specified environment
-* [rename](https://github.com/divshot/divshot-cli/blob/master/README.md#rename) - change the name of an app
-* [rollback](https://github.com/divshot/divshot-cli/blob/master/README.md#rollback) - rollback an environment to a previous release
-* [server](https://github.com/divshot/divshot-cli/blob/master/README.md#server) - start server for local dev
-* [status](https://github.com/divshot/divshot-cli/blob/master/README.md#status) - show release info for each environment
+* [promote](#promote) - promote one environment to another
+* [protect](#protect) - add http basic auth to any environment
+* [push](#push) - deploy your app to the specified environment
+* [rename](#rename) - change the name of an app
+* [rollback](#rollback) - rollback an environment to a previous release
+* [server](#server) - start server for local dev
+* [status](#status) - show release info for each environment
 
 #### Command Options
 
@@ -97,7 +96,7 @@ Remove a value from your Divshot.io app config file. See [Divshot.io configurati
 divshot create [app name]
 ```
 
-Create a new Divshot.io app. If no app nam eis provided, it attempts to read from your Divshot.io configuration file. It that does not exist, it will prompt you for an app name. You can easily create a new Divshot.io app locally and remotely by using [` divshot init `](https://github.com/divshot/divshot-cli/blob/master/README.md#init).
+Create a new Divshot.io app. If no app nam eis provided, it attempts to read from your Divshot.io configuration file. It that does not exist, it will prompt you for an app name. You can easily create a new Divshot.io app locally and remotely by using [` divshot init `](#init).
 
 ### destroy
 
@@ -122,7 +121,7 @@ See a list of all custom domains associated with your app. For more in depth usa
 divshot domains:add [domain]
 ```
 
-Add a custom domain to your app. You may see a list of your domains with [` divshot domains `](https://github.com/divshot/divshot-cli/blob/master/README.md#domains). For more in depth usage, see [Divshot.io Custom Domains](http://docs.divshot.io/guides/domains)
+Add a custom domain to your app. You may see a list of your domains with [` divshot domains `](#domains). For more in depth usage, see [Divshot.io Custom Domains](http://docs.divshot.io/guides/domains)
 
 ### domains:remove
 
@@ -130,7 +129,7 @@ Add a custom domain to your app. You may see a list of your domains with [` divs
 divshot domains:remove [domain]
 ```
 
-Remove a custom domain from your app. You may see a list of your domains with [` divshot domains `](https://github.com/divshot/divshot-cli/blob/master/README.md#domains). For more in depth usage, see [Divshot.io Custom Domains](http://docs.divshot.io/guides/domains)
+Remove a custom domain from your app. You may see a list of your domains with [` divshot domains `](#domains). For more in depth usage, see [Divshot.io Custom Domains](http://docs.divshot.io/guides/domains)
 
 ### help
 
@@ -196,7 +195,7 @@ Example:
 divshot promote [from env] [to env]
 ```
 
-Promote one environment to another. A typical use case for this command would be to deploy your staging app to production without having to reploy all the files. See [environments](https://github.com/divshot/divshot-cli/blob/master/README.md#environments) for a list of available environments.
+Promote one environment to another. A typical use case for this command would be to deploy your staging app to production without having to reploy all the files. See [environments](#environments) for a list of available environments.
 
 Example promotions
 
@@ -217,7 +216,7 @@ Protect your development and staging and environments with [http authentication]
 divshot push [environment]
 ```
 
-Deploy your app to the specified environment. If no environment is given, we assume that you mean *production*. The entire push process takes as long as the number of files in your project. Once deployed, your app is immediately available. See [environments](https://github.com/divshot/divshot-cli/blob/master/README.md#environments) for a list of available environments.
+Deploy your app to the specified environment. If no environment is given, we assume that you mean *production*. The entire push process takes as long as the number of files in your project. Once deployed, your app is immediately available. See [environments](#environments) for a list of available environments.
 
 ### rename
 
@@ -233,7 +232,7 @@ Rename your app. This changes the subomdain on Divshot.io and updates your confi
 divshot rollback [environment]
 ```
 
-Rollback the given environment to a previous release. This is useful when buggy code has been deployed. Divshot.io automatically detects what your previously release was and rollsback to that release. See [environments](https://github.com/divshot/divshot-cli/blob/master/README.md#environments) for a list of available environments.
+Rollback the given environment to a previous release. This is useful when buggy code has been deployed. Divshot.io automatically detects what your previously release was and rollsback to that release. See [environments](#environments) for a list of available environments.
 
 ### server
 
@@ -254,5 +253,5 @@ Server command options:
 divshot status [environment]
 ```
 
-Show release info for each environment. If you no environment is specified, the latest release info will be listed for each enviornment. If an environment is specifed, it will list the last few releases for that environment. See [environments](https://github.com/divshot/divshot-cli/blob/master/README.md#environments) for a list of available environments.
+Show release info for each environment. If you no environment is specified, the latest release info will be listed for each enviornment. If an environment is specifed, it will list the last few releases for that environment. See [environments](#environments) for a list of available environments.
 
