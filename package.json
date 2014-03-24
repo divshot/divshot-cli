@@ -1,14 +1,14 @@
 {
   "name": "divshot-cli",
   "description": "CLI for Divshot.io",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "dependencies": {
     "regular": "~0.1.3",
     "divshot-api": "0.6.x",
     "request": "2.27.x",
     "lodash": "~2.2.1",
     "promptly": "~0.2.0",
-    "superstatic": "0.6.x",
+    "superstatic": "0.7.x",
     "async": "~0.2.9",
     "slug": "~0.3.3",
     "feedback": "0.3.0",
