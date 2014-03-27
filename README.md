@@ -4,8 +4,8 @@ CLI for Divshot
 
 #### [Commands](#commands-1)
 
-* [account]() - display basic account details
-* [account:redeem]() - reedem a voucher and credit it to your account
+* [account](#acount) - display basic account details
+* [account:redeem](#accountredeem) - reedem a voucher and credit it to your account
 * [apps](#apps) - list your apps
 * [auth:token](#authtoken) - print out your access token
 * [config](#config) - list, set, or remove keys and values from your app
