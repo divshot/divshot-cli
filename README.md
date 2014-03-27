@@ -4,20 +4,22 @@ CLI for Divshot
 
 #### [Commands](#commands-1)
 
+* [account](#acount) - display basic account details
+* [account:redeem](#accountredeem) - reedem a voucher and credit it to your account
 * [apps](#apps) - list your apps
 * [auth:token](#authtoken) - print out your access token
 * [config](#config) - list, set, or remove keys and values from your app
 * [config:add](#configadd) - add a value to the config file
 * [config:remove](#configremove) - remove a value from the config file
 * [create](#create) - create a new app
-* [destroy](#destroy) - delete a divshot.io app
+* [destroy](#destroy) - delete an app
 * [domains](#domains) - list your domains
 * [domains:add](#domainsadd) - add a custom domain to your app
 * [domains:remove](#domainsremove) - remove a custom domain from your app
-* [help](#help) - get help with common Divshot.io commands
+* [help](#help) - get help with common commands
 * [init](#init) - step by step guide to initiate an app in the current directory
-* [login](#login) - login to Divshot.io
-* [logout](#logout) - logout from Divshot.io
+* [login](#login) - login to Divshot
+* [logout](#logout) - logout from Divshot
 * [open](#open) - open the current app in your default browser
 * [promote](#promote) - promote one environment to another
 * [protect](#protect) - add http basic auth to any environment
@@ -32,7 +34,7 @@ CLI for Divshot
 * `-h, --help` - show the help menu
 * `-v, --version` - show current version of Divshot Cli
 * `-t, --token [token] ` - manually pass access token
-* `-a, --app [app name] ` - manually supply the Divshot.io app name
+* `-a, --app [app name] ` - manually supply an app name
 
 ####Environments
 
@@ -40,7 +42,7 @@ CLI for Divshot
 * ` staging `
 * ` production `
 
-Each environment is immediately available and deployent at the following url scheme: **http://[environment].[app name].divshot.io**. You may reference [Divshot.io Builds and Environments](http://docs.divshot.io/guides/builds) for a more detailed explanation.
+Each environment is immediately available and deployent at the following url scheme: **http://[environment].[app name].divshot.io**. You may reference [Divshot Builds and Environments](http://docs.divshot.io/guides/builds) for a more detailed explanation.
 
 ## Install
 
@@ -50,13 +52,29 @@ npm install divshot-cli -g
 
 ## Commands
 
+### account
+
+```
+divshot account
+```
+
+Display your basic accountd details
+
+### account:redeem
+
+```
+divshot account:redeem [voucher code]
+```
+
+Reedem a voucher and credit it to your account
+
 ### apps
 
 ```
 divshot apps
 ```
 
-List your Divshot.io apps.
+List your Divshot apps.
 
 ### auth:token
 
@@ -72,7 +90,7 @@ Print out your access token. This token is used to authenticate you with the Div
 divshot config
 ```
 
-List the keys and values from your Divshot.io app config file. See [Divshot.io configuration reference](http://docs.divshot.io/guides/configuration) for more details on these values.
+List the keys and values from your Divshot app config file. See [Divshot configuration reference](http://docs.divshot.io/guides/configuration) for more details on these values.
 
 ### config:add
 
@@ -80,7 +98,7 @@ List the keys and values from your Divshot.io app config file. See [Divshot.io c
 divshot config:add [key] [value]
 ```
 
-Add a value to your Divshot.io app config file. See [Divshot.io configuration reference](http://docs.divshot.io/guides/configuration) for more details on these values.
+Add a value to your Divshot app config file. See [Divshot configuration reference](http://docs.divshot.io/guides/configuration) for more details on these values.
 
 ### config:remove
 
@@ -88,7 +106,7 @@ Add a value to your Divshot.io app config file. See [Divshot.io configuration re
 divshot config:remove [key]
 ```
 
-Remove a value from your Divshot.io app config file. See [Divshot.io configuration reference](http://docs.divshot.io/guides/configuration) for more details on these values.
+Remove a value from your Divshot app config file. See [Divshot configuration reference](http://docs.divshot.io/guides/configuration) for more details on these values.
 
 ### create
 
@@ -96,7 +114,7 @@ Remove a value from your Divshot.io app config file. See [Divshot.io configurati
 divshot create [app name]
 ```
 
-Create a new Divshot.io app. If no app nam eis provided, it attempts to read from your Divshot.io configuration file. It that does not exist, it will prompt you for an app name. You can easily create a new Divshot.io app locally and remotely by using [` divshot init `](#init).
+Create a new Divshot app. If no app name is provided, it attempts to read from your Divshot configuration file. It that does not exist, it will prompt you for an app name. You can easily create a new Divshot app locally and remotely by using [` divshot init `](#init).
 
 ### destroy
 
@@ -105,7 +123,7 @@ Create a new Divshot.io app. If no app nam eis provided, it attempts to read fro
 dishot destroy [app name]
 ```
 
-Delete a Divshot.io app. This is permanent and immediate. It removes not only your files, but it disables the subdomain associated with the application.
+Delete a Divshot app. This is permanent and immediate. It removes not only your files, but it disables the subdomain associated with the application.
 
 ### domains
 
@@ -113,7 +131,7 @@ Delete a Divshot.io app. This is permanent and immediate. It removes not only yo
 divshot domains
 ```
 
-See a list of all custom domains associated with your app. For more in depth usage, see [Divshot.io Custom Domains](http://docs.divshot.io/guides/domains)
+See a list of all custom domains associated with your app. For more in depth usage, see [Divshot Custom Domains](http://docs.divshot.io/guides/domains)
 
 ### domains:add
 
@@ -121,7 +139,7 @@ See a list of all custom domains associated with your app. For more in depth usa
 divshot domains:add [domain]
 ```
 
-Add a custom domain to your app. You may see a list of your domains with [` divshot domains `](#domains). For more in depth usage, see [Divshot.io Custom Domains](http://docs.divshot.io/guides/domains)
+Add a custom domain to your app. You may see a list of your domains with [` divshot domains `](#domains). For more in depth usage, see [Divshot Custom Domains](http://docs.divshot.io/guides/domains)
 
 ### domains:remove
 
@@ -129,7 +147,7 @@ Add a custom domain to your app. You may see a list of your domains with [` divs
 divshot domains:remove [domain]
 ```
 
-Remove a custom domain from your app. You may see a list of your domains with [` divshot domains `](#domains). For more in depth usage, see [Divshot.io Custom Domains](http://docs.divshot.io/guides/domains)
+Remove a custom domain from your app. You may see a list of your domains with [` divshot domains `](#domains). For more in depth usage, see [Divshot Custom Domains](http://docs.divshot.io/guides/domains)
 
 ### help
 
@@ -137,7 +155,7 @@ Remove a custom domain from your app. You may see a list of your domains with [`
 divshot help
 ```
 
-Get help with common Divshot.io commands. Lists all the available commands.
+Get help with common Divshot commands. Lists all the available commands.
 
 If you need help with a specific command, you may specify that command after the word *help*.
 
@@ -156,9 +174,9 @@ Step by step guide to initiate an app in the current directory. The steps you ar
 1. ` name ` - app name
 2. ` root ` - the root directory of the app relative to the current directory
 3. ` error page ` - the relative path or absolute url of an error/not foud page to display in in your app.
-4. ` create app ` - do you want to create  new app on Divshot.io upon completing these steps? (As opposed to only creating the app locally)
+4. ` create app ` - do you want to create  new app on Divshot upon completing these steps? (As opposed to only creating the app locally)
 
-Once your initiated your app, the *root* directory will now contain a ` divshot.json ` file with your settings. You may reference [Divshot.io configuration reference](http://docs.divshot.io/guides/configuration) for a more detailed description of this file.
+Once your initiated your app, the *root* directory will now contain a ` divshot.json ` file with your settings. You may reference [Divshot configuration reference](http://docs.divshot.io/guides/configuration) for a more detailed description of this file.
 
 ### login
 
@@ -166,7 +184,7 @@ Once your initiated your app, the *root* directory will now contain a ` divshot.
 divshot login
 ```
 
-Login to your Divshot.io account.
+Login to your Divshot account.
 
 ### logout
 
@@ -224,7 +242,7 @@ Deploy your app to the specified environment. If no environment is given, we ass
 divshot rename [new app name]
 ```
 
-Rename your app. This changes the subomdain on Divshot.io and updates your configuration file. It is permanent once complete.
+Rename your app. This changes the subomdain on Divshot and updates your configuration file. It is permanent once complete.
 
 ### rollback
 
@@ -232,7 +250,7 @@ Rename your app. This changes the subomdain on Divshot.io and updates your confi
 divshot rollback [environment]
 ```
 
-Rollback the given environment to a previous release. This is useful when buggy code has been deployed. Divshot.io automatically detects what your previously release was and rollsback to that release. See [environments](#environments) for a list of available environments.
+Rollback the given environment to a previous release. This is useful when buggy code has been deployed. Divshot automatically detects what your previously release was and rollsback to that release. See [environments](#environments) for a list of available environments.
 
 ### server
 
@@ -240,7 +258,7 @@ Rollback the given environment to a previous release. This is useful when buggy 
 divshot server
 ```
 
-Start a server for local development. This local server mimics the capabilities of static sites running on [Divshot.io](http://divshot.io). Refer to the [Divshot.io documentation](http://docs.divshot.io/guides/configuration) for configuration instructions.
+Start a server for local development. This local server mimics the capabilities of static sites running on [Divshot](http://divshot.io). Refer to the [Divshot documentation](http://docs.divshot.io/guides/configuration) for configuration instructions.
 
 Server command options:
 
