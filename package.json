@@ -1,6 +1,6 @@
 {
   "name": "divshot-cli",
-  "description": "CLI for Divshot.io",
+  "description": "CLI for Divshot",
   "version": "0.9.2",
   "dependencies": {
     "regular": "~0.1.3",
