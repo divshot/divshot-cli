@@ -4,9 +4,9 @@ CLI for Divshot
 
 #### [Commands](#commands-1)
 
-* [apps](#apps) - list your apps
-* [account]() - display basic accountd details
+* [account]() - display basic account details
 * [account:redeem]() - reedem a voucher and credit it to your account
+* [apps](#apps) - list your apps
 * [auth:token](#authtoken) - print out your access token
 * [config](#config) - list, set, or remove keys and values from your app
 * [config:add](#configadd) - add a value to the config file
@@ -52,14 +52,6 @@ npm install divshot-cli -g
 
 ## Commands
 
-### apps
-
-```
-divshot apps
-```
-
-List your Divshot apps.
-
 ### account
 
 ```
@@ -75,6 +67,14 @@ divshot account:redeem [voucher code]
 ```
 
 Reedem a voucher and credit it to your account
+
+### apps
+
+```
+divshot apps
+```
+
+List your Divshot apps.
 
 ### auth:token
 
