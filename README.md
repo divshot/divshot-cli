@@ -5,7 +5,7 @@ CLI for Divshot
 #### [Commands](#commands-1)
 
 * [account](#account) - display basic account details
-* [account:redeem](#accountredeem) - reedem a voucher and credit it to your account
+* [account:redeem](#accountredeem) - redeem a voucher and credit it to your account
 * [apps](#apps) - list your apps
 * [auth:token](#authtoken) - print out your access token
 * [config](#config) - list, set, or remove keys and values from your app
@@ -32,7 +32,7 @@ CLI for Divshot
 #### Command Options
 
 * `-h, --help` - show the help menu
-* `-v, --version` - show current version of Divshot Cli
+* `-v, --version` - show current version of Divshot CLI
 * `-t, --token [token] ` - manually pass access token
 * `-a, --app [app name] ` - manually supply an app name
 
@@ -42,7 +42,7 @@ CLI for Divshot
 * ` staging `
 * ` production `
 
-Each environment is immediately available and deployent at the following url scheme: **http://[environment].[app name].divshot.io**. You may reference [Divshot Builds and Environments](http://docs.divshot.io/guides/builds) for a more detailed explanation.
+Each environment is immediately available and deployed at the following URL scheme: **http://[environment].[app name].divshot.io**. You may reference [Divshot Builds and Environments](http://docs.divshot.io/guides/builds) for a more detailed explanation.
 
 ## Install
 
@@ -58,7 +58,7 @@ npm install divshot-cli -g
 divshot account
 ```
 
-Display your basic accountd details
+Display your basic account details.
 
 ### account:redeem
 
@@ -66,7 +66,7 @@ Display your basic accountd details
 divshot account:redeem [voucher code]
 ```
 
-Reedem a voucher and credit it to your account
+Redeem a voucher and credit it to your account.
 
 ### apps
 
@@ -82,7 +82,7 @@ List your Divshot apps.
 divshot auth:token
 ```
 
-Print out your access token. This token is used to authenticate you with the Divshot api.
+Print out your access token. This token is used to authenticate you with the Divshot API.
 
 ### config
 
@@ -131,7 +131,7 @@ Delete a Divshot app. This is permanent and immediate. It removes not only your 
 divshot domains
 ```
 
-See a list of all custom domains associated with your app. For more in depth usage, see [Divshot Custom Domains](http://docs.divshot.io/guides/domains)
+See a list of all custom domains associated with your app. For more in-depth usage, see [Divshot Custom Domains](http://docs.divshot.io/guides/domains).
 
 ### domains:add
 
@@ -139,7 +139,7 @@ See a list of all custom domains associated with your app. For more in depth usa
 divshot domains:add [domain]
 ```
 
-Add a custom domain to your app. You may see a list of your domains with [` divshot domains `](#domains). For more in depth usage, see [Divshot Custom Domains](http://docs.divshot.io/guides/domains)
+Add a custom domain to your app. You may see a list of your domains with [` divshot domains `](#domains). For more in-depth usage, see [Divshot Custom Domains](http://docs.divshot.io/guides/domains).
 
 ### domains:remove
 
@@ -147,7 +147,7 @@ Add a custom domain to your app. You may see a list of your domains with [` divs
 divshot domains:remove [domain]
 ```
 
-Remove a custom domain from your app. You may see a list of your domains with [` divshot domains `](#domains). For more in depth usage, see [Divshot Custom Domains](http://docs.divshot.io/guides/domains)
+Remove a custom domain from your app. You may see a list of your domains with [` divshot domains `](#domains). For more in-depth usage, see [Divshot Custom Domains](http://docs.divshot.io/guides/domains).
 
 ### help
 
@@ -166,7 +166,7 @@ divshot help [command]
 ### init
 
 ```
-divhshot init
+divshot init
 ```
 
 Step by step guide to initiate an app in the current directory. The steps you are taken through are as follows:
@@ -176,7 +176,7 @@ Step by step guide to initiate an app in the current directory. The steps you ar
 3. ` error page ` - the relative path or absolute url of an error/not foud page to display in in your app.
 4. ` create app ` - do you want to create  new app on Divshot upon completing these steps? (As opposed to only creating the app locally)
 
-Once your initiated your app, the *root* directory will now contain a ` divshot.json ` file with your settings. You may reference [Divshot configuration reference](http://docs.divshot.io/guides/configuration) for a more detailed description of this file.
+Once you initiated your app, the *root* directory will now contain a ` divshot.json ` file with your settings. You may reference [Divshot configuration reference](http://docs.divshot.io/guides/configuration) for a more detailed description of this file.
 
 ### login
 
@@ -200,11 +200,11 @@ Logout of your account.
 divshot open [optional environment]
 ```
 
-Open your app in your default browser
+Open app in your default browser.
 
 Example:
 
-* ` divshot open ` - Opens the production, cdn environment of your app
+* ` divshot open ` - Opens the production, CDN environment of your app
 * ` divshot open development ` - Opens up the development environment of your app
 
 ### promote
@@ -213,7 +213,7 @@ Example:
 divshot promote [from env] [to env]
 ```
 
-Promote one environment to another. A typical use case for this command would be to deploy your staging app to production without having to reploy all the files. See [environments](#environments) for a list of available environments.
+Promote one environment to another. A typical use case for this command would be to deploy your staging app to production without having to redeploy all the files. See [environments](#environments) for a list of available environments.
 
 Example promotions
 
@@ -226,7 +226,7 @@ Example promotions
 divshot protect [environment] [username:password]
 ```
 
-Protect your development and staging and environments with [http authentication](http://en.wikipedia.org/wiki/Basic_access_authentication).
+Protect your development and staging environments with [http authentication](http://en.wikipedia.org/wiki/Basic_access_authentication).
 
 ### push
 
@@ -250,7 +250,7 @@ Rename your app. This changes the subomdain on Divshot and updates your configur
 divshot rollback [environment]
 ```
 
-Rollback the given environment to a previous release. This is useful when buggy code has been deployed. Divshot automatically detects what your previously release was and rollsback to that release. See [environments](#environments) for a list of available environments.
+Rollback the given environment to a previous release. This is useful when buggy code has been deployed. Divshot automatically detects and rolls back to your previous release. See [environments](#environments) for a list of available environments.
 
 ### server
 
@@ -271,5 +271,5 @@ Server command options:
 divshot status [environment]
 ```
 
-Show release info for each environment. If you no environment is specified, the latest release info will be listed for each enviornment. If an environment is specifed, it will list the last few releases for that environment. See [environments](#environments) for a list of available environments.
+Show release info for each environment. If no environment is specified, the latest release info will be listed for each environment. If an environment is specified, it will list the last few releases for that environment. See [environments](#environments) for a list of available environments.
 
