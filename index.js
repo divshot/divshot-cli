@@ -73,12 +73,12 @@ cli.flag('-c', '--config')
   });
 
 // Helpers
-cli.method('authenticate', function (command, done) {
+cli.method('authenticate', function (cli, command, done) {
   if (!cli.user.authenticated()) return done(cli.errors.NOT_AUTHENTICATED);
   done();
 });
 
-cli.method('version', function (command, done) {
+cli.method('version', function (cli, command, done) {
   cli.package.hasLatestVersion(function (err, hasLatestVersion) {
     if (!hasLatestVersion) {
       cli.log();
