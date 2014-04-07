@@ -90,7 +90,8 @@ cli.method('version', function (command, done) {
   });
 });
 
-cli.beforeAll('version');
+// FIXME: Stopped working
+// cli.beforeAll('version');
 
 cli.catchAll(function (type, attemptedCommand) {
   // Undefined command
