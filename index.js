@@ -78,6 +78,11 @@ cli.method('authenticate', function (cli, command, done) {
   done();
 });
 
+cli.method('isApp', function (cli, command, next) {
+  if(!cli.cwd.getConfig().name) return next(cli.errors.DIRECTORY_NOT_APP);
+  next();
+});
+
 cli.method('version', function (cli, command, done) {
   cli.package.hasLatestVersion(function (err, hasLatestVersion) {
     if (!hasLatestVersion) {
