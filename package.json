@@ -24,7 +24,7 @@
     "superstatic": "~0.10.1",
     "tarzan": "0.1.x",
     "through": "~2.3.4",
-    "update-notifier": "^0.1.8"
+    "update-notifier": "~0.1.8"
   },
   "devDependencies": {
     "sinon": "~1.7.3",
