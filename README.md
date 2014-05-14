@@ -2,6 +2,8 @@
 
 CLI for Divshot
 
+[![NPM version](http://img.shields.io/npm/v/divshot-cli.svg?style=flat)](http://npmjs.org/package/divshot-cli)
+
 #### [Commands](#commands-1)
 
 * [account](#account) - display basic account details
