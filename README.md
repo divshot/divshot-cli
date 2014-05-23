@@ -162,6 +162,38 @@ divshot domains:remove [domain]
 
 Remove a custom domain from your app. You may see a list of your domains with [` divshot domains `](#domains). For more in-depth usage, see [Divshot Custom Domains](http://docs.divshot.io/guides/domains).
 
+### emails
+
+```
+divshot emails
+```
+
+Show any emails associated with this app. Also shows which emails have been approved and which emails are pending authorization by the email owner.
+
+### emails:add
+
+```
+divshot emails:add [email]
+```
+
+Add an email to the current app. Once added, the email will receive an email that the email owner must use to authorize the email address.
+
+### emails:remove
+
+```
+divshot emails:remove [email]
+```
+
+Remove an email from the current app.
+
+### emails:resend
+
+```
+divshot emails:resend [email]
+```
+
+Resend the the authorization email for the given email address.
+
 ### help
 
 ```
