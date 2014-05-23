@@ -18,6 +18,14 @@ CLI for Divshot
 * [domains](#domains) - list your domains
 * [domains:add](#domainsadd) - add a custom domain to your app
 * [domains:remove](#domainsremove) - remove a custom domain from your app
+* [emails](#emails) - list emails associated with your app
+* [emails:add](#emailsadd) - add an email to your app
+* [emails:remove](#emailsremove) - remove an email from your app
+* [emails:resend](#emailsresend) - resend the confirmation email
+* [env](#env) - list environment variables for your app
+* [env:add](#envadd) - add an environment variable to your app
+* [env:pull](#envpull) - copy environment data to your local environment
+* [files](#files) - list the current files associated with the given environment
 * [help](#help) - get help with common commands
 * [init](#init) - step by step guide to initiate an app in the current directory
 * [login](#login) - login to Divshot
@@ -25,11 +33,13 @@ CLI for Divshot
 * [open](#open) - open the current app in your default browser
 * [promote](#promote) - promote one environment to another
 * [protect](#protect) - add http basic auth to any environment
+* [pull](#pull) - download the current files for a given environment into a directory
 * [push](#push) - deploy your app to the specified environment
 * [rename](#rename) - change the name of an app
 * [rollback](#rollback) - rollback an environment to a previous release
 * [server](#server) - start server for local dev
 * [status](#status) - show release info for each environment
+* [unprotect](#unprotect) - remove basic auth from an environment on your app
 
 #### Command Options
 
@@ -37,6 +47,7 @@ CLI for Divshot
 * `-v, --version` - show current version of Divshot CLI
 * `-t, --token [token] ` - manually pass access token
 * `-a, --app [app name] ` - manually supply an app name
+* `-c, --config [config] ` - use a different config file
 
 ####Environments
 
@@ -151,6 +162,70 @@ divshot domains:remove [domain]
 
 Remove a custom domain from your app. You may see a list of your domains with [` divshot domains `](#domains). For more in-depth usage, see [Divshot Custom Domains](http://docs.divshot.io/guides/domains).
 
+### emails
+
+```
+divshot emails
+```
+
+Show any emails associated with this app. Also shows which emails have been approved and which emails are pending authorization by the email owner.
+
+### emails:add
+
+```
+divshot emails:add [email]
+```
+
+Add an email to the current app. Once added, the email will receive an email that the email owner must use to authorize the email address.
+
+### emails:remove
+
+```
+divshot emails:remove [email]
+```
+
+Remove an email from the current app.
+
+### emails:resend
+
+```
+divshot emails:resend [email]
+```
+
+Resend the the authorization email for the given email address.
+
+### env
+
+```
+divshot env [environment]
+```
+
+List the key/value pairs of environment variables associated with the given environment on the current app. See [Environment Variables](http://docs.divshot.com/guides/environment-variables) for more details.
+
+### env:add
+
+```
+divshot env:add [environment] KEY=value KEY2=value ...
+```
+
+Add environment variables to the current app. See [Environment Variables](http://docs.divshot.com/guides/environment-variables) for more details.
+
+### env:pull
+
+```
+divshot env:pull [environment]
+```
+
+Copy environment data to your local environment. Creates a `.env.json` file that is available to your app with `__env.js` or `__env.json`. See [Environment Variables](http://docs.divshot.com/guides/environment-variables) for more details.
+
+### files
+
+```
+divshot files [environment]
+```
+
+List the files currently associated with the given environment. These are the files that were deployed to Divshot using [divshot push](#push)
+
 ### help
 
 ```
@@ -230,6 +305,14 @@ divshot protect [environment] [username:password]
 
 Protect your development and staging environments with [http authentication](http://en.wikipedia.org/wiki/Basic_access_authentication).
 
+### pull
+
+```
+divshot pull [environment] [optional directory]
+```
+
+Download all the files currently associated with the given environment. If no directory is provided, it defaults to the current directory. These files are the files deployed to Divshot using [divshot push](#push)
+
 ### push
 
 ```
@@ -274,4 +357,14 @@ divshot status [environment]
 ```
 
 Show release info for each environment. If no environment is specified, the latest release info will be listed for each environment. If an environment is specified, it will list the last few releases for that environment. See [environments](#environments) for a list of available environments.
+
+### unprotect
+
+```
+divshot unprotect [environment]
+```
+
+Unprotect your development and staging environments and remove the authentication.
+
+
 
