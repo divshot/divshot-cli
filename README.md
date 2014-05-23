@@ -218,6 +218,14 @@ divshot env:pull [environment]
 
 Copy environment data to your local environment. Creates a `.env.json` file that is available to your app with `__env.js` or `__env.json`. See [Environment Variables](http://docs.divshot.com/guides/environment-variables) for more details.
 
+### files
+
+```
+divshot files [environment]
+```
+
+List the files currently associated with the given environment. These are the files that were deployed to Divshot using [divshot push](#push)
+
 ### help
 
 ```
