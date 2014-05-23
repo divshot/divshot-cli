@@ -18,6 +18,14 @@ CLI for Divshot
 * [domains](#domains) - list your domains
 * [domains:add](#domainsadd) - add a custom domain to your app
 * [domains:remove](#domainsremove) - remove a custom domain from your app
+* [emails]() - list emails associated with your app
+* [emails:add]() - add an email to your app
+* [emails:remove]() - remove an email from your app
+* [emails:resend]() - resend the confirmation email
+* [env]() - list environment variables for your app
+* [env:add]() - add an environment variable to your app
+* [env:remove]() - remove an environment variable from your app
+* [files]() - list the current files associated with the given environment
 * [help](#help) - get help with common commands
 * [init](#init) - step by step guide to initiate an app in the current directory
 * [login](#login) - login to Divshot
@@ -25,11 +33,13 @@ CLI for Divshot
 * [open](#open) - open the current app in your default browser
 * [promote](#promote) - promote one environment to another
 * [protect](#protect) - add http basic auth to any environment
+* [pull]() - download the current files for a given environment into a directory
 * [push](#push) - deploy your app to the specified environment
 * [rename](#rename) - change the name of an app
 * [rollback](#rollback) - rollback an environment to a previous release
 * [server](#server) - start server for local dev
 * [status](#status) - show release info for each environment
+* [unprotect]() - remove basic auth from an environment on your app
 
 #### Command Options
 
@@ -37,6 +47,7 @@ CLI for Divshot
 * `-v, --version` - show current version of Divshot CLI
 * `-t, --token [token] ` - manually pass access token
 * `-a, --app [app name] ` - manually supply an app name
+* `-c, --config [config] ` - use a different config file
 
 ####Environments
 
