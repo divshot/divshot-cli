@@ -305,6 +305,14 @@ divshot protect [environment] [username:password]
 
 Protect your development and staging environments with [http authentication](http://en.wikipedia.org/wiki/Basic_access_authentication).
 
+### pull
+
+```
+divshot pull [environment] [optional directory]
+```
+
+Download all the files currently associated with the given environment. If no directory is provided, it defaults to the current directory. These files are the files deployed to Divshot using [divshot push](#push)
+
 ### push
 
 ```
@@ -349,4 +357,14 @@ divshot status [environment]
 ```
 
 Show release info for each environment. If no environment is specified, the latest release info will be listed for each environment. If an environment is specified, it will list the last few releases for that environment. See [environments](#environments) for a list of available environments.
+
+### unprotect
+
+```
+divshot unprotect [environment]
+```
+
+Unprotect your development and staging environments and remove the authentication.
+
+
 
