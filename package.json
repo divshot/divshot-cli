@@ -1,13 +1,13 @@
 {
   "name": "divshot-cli",
   "description": "CLI for Divshot",
-  "version": "0.11.1",
+  "version": "0.11.2",
   "dependencies": {
     "async": "~0.9.0",
     "chalk": "~0.4.0",
     "cozy-slug": "0.1.x",
     "divshot-api": "0.6.x",
-    "divshot-upload": "0.2.x",
+    "divshot-upload": "0.3.x",
     "feedback": "~0.3.0",
     "home-dir": "~0.1.1",
     "lodash": "~2.4.1",
