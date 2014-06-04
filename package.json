@@ -26,7 +26,8 @@
     "tarzan": "0.1.x",
     "through": "~2.3.4",
     "update-notifier": "~0.1.8",
-    "writestreamp": "^0.1.0"
+    "writestreamp": "^0.1.0",
+    "copy-files": "^0.1.0"
   },
   "devDependencies": {
     "sinon": "~1.7.3",
