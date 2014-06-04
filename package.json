@@ -22,7 +22,7 @@
     "request": "2.36.x",
     "semver": "2.3.x",
     "sizer": "0.1.x",
-    "superstatic": "~0.10.1",
+    "superstatic": "~0.11.0",
     "tarzan": "0.1.x",
     "through": "~2.3.4",
     "update-notifier": "~0.1.8",
