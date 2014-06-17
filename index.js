@@ -7,10 +7,8 @@ var format = require('chalk');
 var User = require('./lib/user');
 var Cwd = require('./lib/cwd');
 var environments = require('./lib/environments');
-var Package = require('./lib/package');
 var commands = require('./lib/commands');
 var errors = require('./lib/errors');
-var semver = require('semver');
 var format = require('chalk');
 
 var API_HOST = process.env.API_HOST || 'https://api.divshot.com';
@@ -39,7 +37,6 @@ var cli = Nash.createCli({
   
   user: user,
   cwd: cwd,
-  package: new Package(user),
   errors: errors,
   environments: environments
 });
@@ -81,18 +78,6 @@ cli.method('authenticate', function (cli, command, done) {
 cli.method('isApp', function (cli, command, next) {
   if(!cli.cwd.getConfig().name) return next(cli.errors.DIRECTORY_NOT_APP);
   next();
-});
-
-cli.method('version', function (cli, command, done) {
-  cli.package.hasLatestVersion(function (err, hasLatestVersion) {
-    if (!hasLatestVersion) {
-      cli.log();
-      cli.log(format.yellow('Attention: ') + 'A new version of Divshot CLI availble (' + cli.package.version + ').\nUpdate with ' + format.bold('"npm install divshot-cli -g"'));
-      cli.log();
-    }
-    
-    done();
-  });
 });
 
 // FIXME: Stopped working
