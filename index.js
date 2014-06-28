@@ -90,7 +90,7 @@ cli.catchAll(function (type, attemptedCommand) {
   cli.log();
   cli.log(format.bold('"' + attemptedCommand + '"') + ' is not a Divshot ' + type + '.');
   cli.log('Please use ' + format.bold('"divshot help"') + ' for a list of Divshot commands.');
-  cli.log()
+  cli.log();
   cli.log('Note: you may need to update Divshot in order to use that command: ' + format.bold('npm install -g divshot-cli'));
 });
 

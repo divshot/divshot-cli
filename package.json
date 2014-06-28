@@ -3,7 +3,7 @@
   "description": "CLI for Divshot",
   "version": "0.12.4",
   "dependencies": {
-    "async": "~0.9.0",
+    "async": "^0.9.0",
     "chalk": "~0.4.0",
     "cozy-slug": "0.1.x",
     "divshot-api": "0.6.x",
@@ -25,7 +25,14 @@
     "through": "~2.3.4",
     "update-notifier": "~0.1.8",
     "writestreamp": "^0.1.0",
-    "copy-files": "^0.1.0"
+    "copy-files": "^0.1.0",
+    "glob": "^4.0.2",
+    "globby": "^0.1.1",
+    "fs-extra": "^0.9.1",
+    "tmp": "0.0.23",
+    "s3": "git://github.com/divshot/node-s3-client.git",
+    "aws-sdk": "^2.0.4",
+    "progress": "^1.1.6"
   },
   "devDependencies": {
     "sinon": "~1.7.3",
