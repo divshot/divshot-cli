@@ -12,7 +12,8 @@ var errors = require('./lib/errors');
 var format = require('chalk');
 
 var API_HOST = process.env.API_HOST || 'https://api.divshot.com';
-
+process.env.DIVSHOT_HASHED_BUCKET || (process.env.DIVSHOT_HASHED_BUCKET = "divshot-io-hashed-production");
+ 
 var cliConfigDirectory = path.join(homeDir(), '.divshot');
 var user = new User(cliConfigDirectory);
 var cwd = new Cwd();
