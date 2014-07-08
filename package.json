@@ -17,7 +17,7 @@
     "globby": "^0.1.1",
     "home-dir": "~0.1.1",
     "lodash": "^2.4.1",
-    "merkle-dir": "0.0.0",
+    "merkle-dir": "git://github.com/divshot/merkle-dir",
     "mkdirp": "0.5.x",
     "moment": "~2.6.0",
     "nash": "0.3.x",
