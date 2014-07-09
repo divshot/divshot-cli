@@ -1,7 +1,7 @@
 {
   "name": "divshot-cli",
   "description": "CLI for Divshot",
-  "version": "0.13.1",
+  "version": "0.14.0-rc1",
   "dependencies": {
     "async": "^0.9.0",
     "aws-sdk": "^2.0.4",
@@ -36,6 +36,7 @@
     "tmp": "0.0.23",
     "touch": "0.0.3",
     "update-notifier": "~0.1.8",
+    "graceful-fs": "~3.0.2",
     "writestreamp": "^0.1.0"
   },
   "devDependencies": {
@@ -43,8 +44,7 @@
     "mocksy": "~0.1.4",
     "mocha": "~1.14.0",
     "expect.js": "~0.2.0",
-    "jshint": "~2.3.0",
-    "graceful-fs": "~3.0.2"
+    "jshint": "~2.3.0"
   },
   "scripts": {
     "test": "node_modules/.bin/mocha --recursive --reporter spec ./test"
