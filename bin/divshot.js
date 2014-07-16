@@ -1,6 +1,4 @@
-#!/bin/sh
-//usr/bin/env false || `which node || which nodejs` $0 $@ && EXIT=$?
-//usr/bin/env false || exit $EXIT
+#!/usr/bin/env node
 
 var cli = require('../index.js');
 var updateNotifier = require('update-notifier');
