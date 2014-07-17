@@ -1,7 +1,7 @@
 {
   "name": "divshot-cli",
   "description": "CLI for Divshot",
-  "version": "0.14.2-rc1",
+  "version": "0.14.2-rc2",
   "dependencies": {
     "async": "^0.9.0",
     "aws-sdk": "^2.0.4",
@@ -48,7 +48,8 @@
     "jshint": "~2.3.0"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha --recursive --reporter spec ./test"
+    "test": "node_modules/.bin/mocha --recursive --reporter spec ./test",
+    "preinstall": "node preinstall_checklist.js"
   },
   "author": "Divshot",
   "homepage": "http://divshot.com",
