@@ -1,7 +1,7 @@
 {
   "name": "divshot-cli",
   "description": "CLI for Divshot",
-  "version": "0.15.3",
+  "version": "0.15.4",
   "dependencies": {
     "async": "^0.9.0",
     "aws-sdk": "^2.0.4",
@@ -10,7 +10,6 @@
     "copy-files": "^0.1.0",
     "cozy-slug": "0.1.x",
     "divshot-api": "0.6.x",
-    "divshot-upload": "~0.3.1",
     "feedback": "~0.3.0",
     "fs-extra": "^0.9.1",
     "glob": "^4.0.2",
