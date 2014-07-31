@@ -1,7 +1,7 @@
 {
   "name": "divshot-cli",
   "description": "CLI for Divshot",
-  "version": "0.14.1",
+  "version": "0.15.5",
   "dependencies": {
     "async": "^0.9.0",
     "aws-sdk": "^2.0.4",
@@ -10,11 +10,11 @@
     "copy-files": "^0.1.0",
     "cozy-slug": "0.1.x",
     "divshot-api": "0.6.x",
-    "divshot-upload": "~0.3.1",
     "feedback": "~0.3.0",
     "fs-extra": "^0.9.1",
     "glob": "^4.0.2",
     "globby": "^0.1.1",
+    "graceful-fs": "~3.0.2",
     "home-dir": "~0.1.1",
     "lodash": "^2.4.1",
     "merkle-dir": "git://github.com/divshot/merkle-dir",
@@ -30,14 +30,13 @@
     "request": "2.36.x",
     "retry": "^0.6.1",
     "sizer": "0.1.x",
+    "slash": "^0.1.3",
     "superstatic": "~0.11.0",
     "tarzan": "~0.2.1",
     "through": "~2.3.4",
     "tmp": "0.0.23",
-    "update-notifier": "~0.2.0",
     "touch": "0.0.3",
     "update-notifier": "~0.1.8",
-    "graceful-fs": "~3.0.2",
     "writestreamp": "^0.1.0"
   },
   "devDependencies": {
