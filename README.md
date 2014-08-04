@@ -8,6 +8,7 @@ CLI for Divshot
 * [account:redeem](#accountredeem) - redeem a voucher and credit it to your account
 * [apps](#apps) - list your apps
 * [auth:token](#authtoken) - print out your access token
+* [cert](#cert) - upload an SSL certificate
 * [config](#config) - list, set, or remove keys and values from your app
 * [config:add](#configadd) - add a value to the config file
 * [config:remove](#configremove) - remove a value from the config file
@@ -47,7 +48,7 @@ CLI for Divshot
 * `-a, --app [app name] ` - manually supply an app name
 * `-c, --config [config] ` - use a different config file
 
-####Environments
+#### Environments
 
 * ` development ` - this is the default environment during app deployment
 * ` staging `
@@ -102,6 +103,14 @@ divshot config
 ```
 
 List the keys and values from your Divshot app config file. See [Divshot configuration reference](http://docs.divshot.io/guides/configuration) for more details on these values.
+
+### cert
+
+```
+divshot cert [path/to/certificate.crt] [path/to/key.key]
+```
+
+Upload your applicaton's ssl certificate.
 
 ### config:add
 
