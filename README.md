@@ -110,7 +110,7 @@ List the keys and values from your Divshot app config file. See [Divshot configu
 divshot cert [path/to/certificate.crt] [path/to/key.key]
 ```
 
-Upload your applicaton's ssl certificate.
+Upload your application's SSL certificate.
 
 ### config:add
 
@@ -140,7 +140,7 @@ Create a new Divshot app. If no app name is provided, it attempts to read from y
 
 
 ```
-dishot destroy [app name]
+divshot destroy [app name]
 ```
 
 Delete a Divshot app. This is permanent and immediate. It removes not only your files, but it disables the subdomain associated with the application.
@@ -257,8 +257,8 @@ Step by step guide to initiate an app in the current directory. The steps you ar
 
 1. ` name ` - app name
 2. ` root ` - the root directory of the app relative to the current directory
-3. ` error page ` - the relative path or absolute url of an error/not foud page to display in in your app.
-4. ` create app ` - do you want to create  new app on Divshot upon completing these steps? (As opposed to only creating the app locally)
+3. ` error page ` - the relative path or absolute url of an error/not found page to display in your app
+4. ` create app ` - do you want to create a new app on Divshot upon completing these steps? (As opposed to only creating the app locally)
 
 Once you initiated your app, the *root* directory will now contain a ` divshot.json ` file with your settings. You may reference [Divshot configuration reference](http://docs.divshot.io/guides/configuration) for a more detailed description of this file.
 
@@ -334,7 +334,7 @@ Deploy your app to the specified environment. If no environment is given, we ass
 divshot rename [new app name]
 ```
 
-Rename your app. This changes the subomdain on Divshot and updates your configuration file. It is permanent once complete.
+Rename your app. This changes the subdomain on Divshot and updates your configuration file. It is permanent once complete.
 
 ### rollback
 
