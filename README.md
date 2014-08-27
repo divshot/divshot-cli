@@ -30,6 +30,9 @@ CLI for Divshot
 * [login](#login) - login to Divshot
 * [logout](#logout) - logout from Divshot
 * [open](#open) - open the current app in your default browser
+* [production](#production) - show if current app has production status
+* [production:on](#productionon) - give the current app production status
+* [production:off](#productionoff) - remove production status from the current app
 * [promote](#promote) - promote one environment to another
 * [protect](#protect) - add http basic auth to any environment
 * [pull](#pull) - download the current files for a given environment into a directory
@@ -290,6 +293,32 @@ Example:
 
 * ` divshot open ` - Opens the production, CDN environment of your app
 * ` divshot open development ` - Opens up the development environment of your app
+
+### production
+
+```
+divshot production
+```
+
+Show if current app has production status. For more details on apps and production status see [Production Mode Documenation](http://docs.divshot.io/guides/production)
+
+
+### production:on
+
+```
+divshot production:on
+```
+
+Give the current app production status. For more details on apps and production status see [Production Mode Documenation](http://docs.divshot.io/guides/production)
+
+### production:off
+
+```
+divshot production:off
+```
+
+Remove production status from the current app. For more details on apps and production status see [Production Mode Documenation](http://docs.divshot.io/guides/production)
+
 
 ### promote
 
