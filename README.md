@@ -47,9 +47,10 @@ CLI for Divshot
 
 * `-h, --help` - show the help menu
 * `-v, --version` - show current version of Divshot CLI
-* `-t, --token [token] ` - manually pass access token
-* `-a, --app [app name] ` - manually supply an app name
-* `-c, --config [config] ` - use a different config file
+* `-t, --token [token]` - manually pass access token
+* `-a, --app [app name]` - manually supply an app name
+* `-c, --config [config]` - use a different config file
+* `--timeout [timeout]` - set the command timeout in milliseconds
 
 #### Environments
 
