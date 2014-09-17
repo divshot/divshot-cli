@@ -39,7 +39,8 @@ var cli = Nash.createCli({
   user: user,
   cwd: cwd,
   errors: errors,
-  environments: environments
+  environments: environments,
+  timeout: 1500
 });
 
 // Flags
@@ -70,6 +71,12 @@ cli.flag('-c', '--config')
     cli.cwd.setConfigFilename(filename)
   });
 
+cli.flag('--timeout')
+  .description('set command timeout, in milliseconds')
+  .handler(function (timeout) {
+    cli.timeout = timeout;
+  });
+
 // Helpers
 cli.method('authenticate', function (cli, command, done) {
   if (!cli.user.authenticated()) return done(cli.errors.NOT_AUTHENTICATED);
@@ -80,9 +87,6 @@ cli.method('isApp', function (cli, command, next) {
   if(!cli.cwd.getConfig().name) return next(cli.errors.DIRECTORY_NOT_APP);
   next();
 });
-
-// FIXME: Stopped working
-// cli.beforeAll('version');
 
 cli.catchAll(function (type, attemptedCommand) {
   // Undefined command
