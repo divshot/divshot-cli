@@ -231,7 +231,7 @@ divshot env:config [environment] setting=value ...
 Configure values in your application's environment. Possible and helpful values include:
 
 * `force_ssl` - Force ssl on all requests to your app. Takes values `true` or `false`. 
-* `force_domain` - Force all requests to your app's production ready domains to redirect to the given domain.
+* `force_domain` - Force all requests to your app's production ready domains to redirect to the given domain. Takes the domain as the value
 
 ### env:pull
 
