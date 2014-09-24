@@ -23,6 +23,7 @@ CLI for Divshot
 * [emails:resend](#emailsresend) - resend the confirmation email
 * [env](#env) - list environment variables for your app
 * [env:add](#envadd) - add an environment variable to your app
+* [env:config](#envconfig) - configure your app's environment
 * [env:pull](#envpull) - copy environment data to your local environment
 * [files](#files) - list the current files associated with the given environment
 * [help](#help) - get help with common commands
@@ -220,6 +221,17 @@ divshot env:add [environment] KEY=value KEY2=value ...
 ```
 
 Add environment variables to the current app. See [Environment Variables](http://docs.divshot.com/guides/environment-variables) for more details.
+
+### env:config
+
+```
+divshot env:config [environment] setting=value ...
+```
+
+Configure values in your application's environment. Possible and helpful values include:
+
+* `force_ssl` - Force ssl on all requests to your app. Takes values `true` or `false`. 
+* `force_domain` - Force all requests to your app's production ready domains to redirect to the given domain.
 
 ### env:pull
 
