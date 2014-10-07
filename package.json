@@ -1,7 +1,7 @@
 {
   "name": "divshot-cli",
   "description": "CLI for Divshot",
-  "version": "0.18.1",
+  "version": "0.18.2",
   "dependencies": {
     "async": "^0.9.0",
     "aws-sdk": "^2.0.4",
