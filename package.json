@@ -18,6 +18,7 @@
     "graceful-fs": "~3.0.2",
     "home-dir": "~0.1.1",
     "join-path": "^1.0.0",
+    "jsonlint": "^1.6.2",
     "lodash": "^2.4.1",
     "merkle-dir": "git://github.com/divshot/merkle-dir",
     "mkdirp": "0.5.x",
