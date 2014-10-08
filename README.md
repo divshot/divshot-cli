@@ -1,4 +1,4 @@
-# Divshot CLI [![NPM version](http://img.shields.io/npm/v/divshot-cli.svg?style=flat)](http://npmjs.org/package/divshot-cli)
+# Divshot CLI [![NPM version](http://img.shields.io/npm/v/divshot-cli.svg?style=flat-square)](http://npmjs.org/package/divshot-cli)
 
 CLI for Divshot
 
