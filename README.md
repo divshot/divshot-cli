@@ -9,6 +9,7 @@ CLI for Divshot
 * [apps](#apps) - list your apps
 * [auth:token](#authtoken) - print out your access token
 * [cert](#cert) - upload an SSL certificate
+* [changelog](#changelog) - view the cli changelog
 * [config](#config) - list, set, or remove keys and values from your app
 * [config:add](#configadd) - add a value to the config file
 * [config:remove](#configremove) - remove a value from the config file
@@ -116,6 +117,14 @@ divshot cert [path/to/certificate.crt] [path/to/key.key]
 ```
 
 Upload your application's SSL certificate.
+
+### changelog
+
+```
+divshot changelog
+```
+
+View the Divshot CLI changelog
 
 ### config:add
 
