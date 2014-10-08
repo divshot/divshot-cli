@@ -1,7 +1,7 @@
 {
   "name": "divshot-cli",
   "description": "CLI for Divshot",
-  "version": "1.0.0-rc2",
+  "version": "1.0.0-rc3",
   "dependencies": {
     "async": "^0.9.0",
     "aws-sdk": "^2.0.4",
@@ -24,7 +24,6 @@
     "marked-terminal": "^1.1.1",
     "merkle-dir": "git://github.com/divshot/merkle-dir",
     "mkdirp": "0.5.x",
-    "moar": "0.0.9",
     "moment": "~2.6.0",
     "nash": "0.3.x",
     "open": "0.0.5",
