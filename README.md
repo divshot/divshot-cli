@@ -32,9 +32,9 @@ CLI for Divshot
 * [login](#login) - login to Divshot
 * [logout](#logout) - logout from Divshot
 * [open](#open) - open the current app in your default browser
-* [production](#production) - show if current app has production status
-* [production:on](#productionon) - give the current app production status
-* [production:off](#productionoff) - remove production status from the current app
+* [performance](#performance) - show if current app has performance status
+* [performance:on](#performanceon) - give the current app performance status
+* [performance:off](#performanceoff) - remove performance status from the current app
 * [promote](#promote) - promote one environment to another
 * [protect](#protect) - add http basic auth to any environment
 * [pull](#pull) - download the current files for a given environment into a directory
@@ -316,30 +316,30 @@ Example:
 * ` divshot open ` - Opens the production, CDN environment of your app
 * ` divshot open development ` - Opens up the development environment of your app
 
-### production
+### performance
 
 ```
-divshot production
+divshot performance
 ```
 
-Show if current app has production status. For more details on apps and production status see [Production Mode Documenation](http://docs.divshot.io/guides/production)
+Show if current app has performance status. For more details on apps and performance status see [High Performance Mode Documenation](http://docs.divshot.io/guides/high-performance)
 
 
-### production:on
-
-```
-divshot production:on
-```
-
-Give the current app production status. For more details on apps and production status see [Production Mode Documenation](http://docs.divshot.io/guides/production)
-
-### production:off
+### performance:on
 
 ```
-divshot production:off
+divshot performance:on
 ```
 
-Remove production status from the current app. For more details on apps and production status see [Production Mode Documenation](http://docs.divshot.io/guides/production)
+Give the current app performance status. For more details on apps and performance status see [High Performance Mode Documenation](http://docs.divshot.io/guides/high-performance)
+
+### performance:off
+
+```
+divshot performance:off
+```
+
+Remove performance status from the current app. For more details on apps and performance status see [High Performance Mode Documenation](http://docs.divshot.io/guides/high-performance)
 
 
 ### promote
