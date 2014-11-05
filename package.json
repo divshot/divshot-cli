@@ -11,7 +11,7 @@
     "clone": "^0.1.18",
     "copy-files": "^0.1.0",
     "cozy-slug": "0.2.2",
-    "divshot-api": "^0.6.15",
+    "divshot-api": "0.7.0",
     "feedback": "^0.3.2",
     "fs-extra": "^0.12.0",
     "glob": "^4.0.6",
