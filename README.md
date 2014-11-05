@@ -42,6 +42,7 @@ CLI for Divshot
 * [rename](#rename) - change the name of an app
 * [rollback](#rollback) - rollback an environment to a previous release
 * [server](#server) - start server for local dev
+* [stats](#stats) - show stats info for your app
 * [status](#status) - show release info for each environment
 * [unprotect](#unprotect) - remove basic auth from an environment on your app
 
@@ -407,6 +408,14 @@ Server command options:
 
 * ` -p, --port [port]` - specify the port for the server to run. Defaults to *3474*
 * ` -h, --host [hostname]` - specify a custom hostname for your app to run at. Defaults to *localhost*
+
+### stats
+
+```
+divshot stats
+```
+
+Show stats infor for your app
 
 ### status
 

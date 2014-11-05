@@ -1,11 +1,12 @@
 {
   "name": "divshot-cli",
   "description": "CLI for Divshot",
-  "version": "1.0.10",
+  "version": "1.1.0",
   "dependencies": {
     "async": "^0.9.0",
     "aws-sdk": "^2.0.4",
     "booly": "^1.0.2",
+    "bytes": "^1.0.0",
     "chalk": "~0.5.1",
     "clone": "^0.1.18",
     "copy-files": "^0.1.0",
@@ -28,6 +29,7 @@
     "moment": "^2.8.3",
     "nash": "0.3.x",
     "open": "0.0.5",
+    "pluralize": "^1.0.3",
     "progress": "^1.1.8",
     "promptly": "^0.2.0",
     "read": "^1.0.5",
