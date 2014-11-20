@@ -1,7 +1,7 @@
 {
-  "name": "divshot-cli",
+  "name": "divshot",
   "description": "CLI for Divshot",
-  "version": "1.3.2",
+  "version": "2.0.0",
   "dependencies": {
     "async": "^0.9.0",
     "booly": "^1.0.2",
@@ -58,9 +58,10 @@
     "url": "https://github.com/divshot/divshot-cli/issues"
   },
   "keywords": [
-    "divshot",
     "hosting",
-    "static"
+    "static",
+    "superstatic",
+    "spa",
   ],
   "preferGlobal": "true",
   "bin": {
