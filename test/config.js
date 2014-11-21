@@ -2,7 +2,7 @@ var getConfig = require('../lib/config');
 var test = require('tape');
 var fs = require('fs');
 
-test('config: local config', function (t) {
+test('config: loads', function (t) {
   
   var removeFile = createConfigFile({
     name: 'my-app',
@@ -11,7 +11,6 @@ test('config: local config', function (t) {
   
   var config = getConfig();
   
-  t.ok(config, 'config object');
   t.equal(config.name, 'my-app', 'loads app config file');
   t.equal(config.root, './', 'loads app config file');
   
