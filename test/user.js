@@ -84,3 +84,15 @@ test('user: determines if user is authenticated', function (t) {
   t.end();
 });
 
+test('user: deletes user config file', function (t) {
+  
+  var user = getUser({file: TEST_FILEPATH});
+  
+  t.ok(fs.existsSync(TEST_FILEPATH), 'test user config file created');
+  
+  user.remove();
+  
+  t.notOk(fs.existsSync(TEST_FILEPATH), 'deleted user config file');
+  t.end();
+});
+

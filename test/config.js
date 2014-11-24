@@ -20,15 +20,23 @@ test('config: loads', function (t) {
 
 test('config: custom config file', function (t) {
   
-  var removeFile = createConfigFile({
+  var removeFile1 = createConfigFile({
     name: 'my-app',
     root: './'
   }, 'custom.json');
   
-  var c = getConfig({file: 'custom.json'});
-  t.equal(c.name, 'my-app', 'loaded custom config file');
+  var removeFile2 = createConfigFile({
+    name: 'my-app',
+    root: './'
+  }, 'another.json');
   
-  removeFile();
+  var c1 = getConfig({file: 'custom.json'});
+  t.equal(c1.name, 'my-app', 'loaded custom config file');
+  
+  var c2 = getConfig({file: ['custom.json', 'another.json']});
+  
+  removeFile1();
+  removeFile2();
   t.end();
 });
 

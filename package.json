@@ -3,10 +3,12 @@
   "description": "Divshot in your Node.js",
   "version": "2.0.0",
   "scripts": {
-    "test": "npm run lint && tape test/** | tap-spec",
+    "test": "npm run lint && tape test/**/**/*.js | tap-spec",
+    "testw": "onchange './lib/**/*.js' './test/**/*.js' -- npm test",
     "lint": "jshint lib/ test/"
   },
   "dependencies": {
+    "as-array": "^1.0.0",
     "ask": "^1.1.0",
     "async": "^0.9.0",
     "booly": "^1.0.2",
@@ -47,6 +49,7 @@
   "devDependencies": {
     "jshint": "^2.5.10",
     "mocksy": "~0.1.4",
+    "onchange": "0.0.2",
     "tap-spec": "^2.1.0",
     "tape": "^3.0.3"
   },
