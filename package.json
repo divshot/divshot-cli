@@ -10,7 +10,7 @@
     "clone": "^0.1.18",
     "copy-files": "^0.1.0",
     "cozy-slug": "0.2.2",
-    "divshot-api": "0.7.0",
+    "divshot-api": "0.8.0",
     "divshot-push": "1.0.3",
     "feedback": "^0.3.2",
     "home-dir": "^0.2.0",
