@@ -1,13 +1,15 @@
 var getAuth = require('../../lib/commands/auth');var getApi = require('../../lib/api');
 var divshot = require('../../lib');
 var getUser = require('../../lib/user');
-var test = require('tape');
+var test = require('tapes');
 var homeDir = require('home-dir');
 var fs = require('fs-extra');
 
 var USER_FILEPATH = homeDir('.divshot-test/user.json');
 
-test('auth: attaches app', function (t) {
+var auth = test('auth');
+
+auth.test('attaches app', function (t) {
   
   var app = divshot({
     configRoot: homeDir('.divshot-test')

@@ -1,13 +1,12 @@
 var divshot = require('../lib');
-var test = require('tape');
+// var test = require('tape');
+var test = require('tapes');
 var homeDir = require('home-dir');
 var fs = require('fs-extra');
 
-// var app = divshot({
-//   userDirectory: homeDir('.divshot')
-// });
+var cli = test('cli');
 
-test('root: creates an app object', function (t) {
+cli.test('creates an app object', function (t) {
   
   var app = divshot();
   
@@ -17,9 +16,9 @@ test('root: creates an app object', function (t) {
   t.ok(app.local.user, 'user instantiator');
   t.ok(app.api, 'api instantiator');
   t.end();
-});
+})
 
-test('root: sets config directory', function (t) {
+cli.test('sets config directory', function (t) {
   
   var app1 = divshot();
   
@@ -31,9 +30,9 @@ test('root: sets config directory', function (t) {
   
   t.equal(app2.configRoot, homeDir('.divshot-test'), 'custom config root');
   t.end();
-});
+})
 
-test('root: clears all cached and saved data', function (t) {
+cli.test('clears all cached and saved data', function (t) {
   
   var configRoot = homeDir('.divshot-test');
   fs.ensureFileSync(configRoot);
@@ -47,13 +46,13 @@ test('root: clears all cached and saved data', function (t) {
   
   t.notOk(fs.existsSync(configRoot), 'config root deleted');
   t.end();
-});
+})
 
-test('root: api', function (t) {
+cli.test('api', function (t) {
   
   var app1 = divshot();
   
-  t.equal(app1.api.origin, 'https://api.divshot.com', 'default api origin');
+  t.equal(app1.api.attributes.origin, 'https://api.divshot.com', 'default api origin');
   
   var app2 = divshot({
     api: {
@@ -64,11 +63,11 @@ test('root: api', function (t) {
     configRoot: 'asdf'
   });
   
-  t.equal(app2.api.origin, 'custom origin', 'custom api origin');
+  t.equal(app2.api.attributes.origin, 'custom origin', 'custom api origin');
   t.end();
-});
+})
 
-test('root: custom config files', function (t) {
+cli.test('custom config files', function (t) {
   
   var app = divshot({
     appConfigFile: 'custom.json',

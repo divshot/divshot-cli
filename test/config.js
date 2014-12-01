@@ -1,8 +1,10 @@
 var getConfig = require('../lib/config');
-var test = require('tape');
+var test = require('tapes');
 var fs = require('fs');
 
-test('config: loads', function (t) {
+var config = test('config');
+
+config.test('loads', function (t) {
   
   var removeFile = createConfigFile({
     name: 'my-app',
@@ -18,7 +20,7 @@ test('config: loads', function (t) {
   t.end();
 });
 
-test('config: custom config file', function (t) {
+config.test('custom config file', function (t) {
   
   var removeFile1 = createConfigFile({
     name: 'my-app',
@@ -40,7 +42,7 @@ test('config: custom config file', function (t) {
   t.end();
 });
 
-test('config: set config data', function (t) {
+config.test('set config data', function (t) {
   
   var removeFile = createConfigFile({
     name: 'my-app',
@@ -58,7 +60,7 @@ test('config: set config data', function (t) {
   t.end();
 });
 
-test('config: saves data to config file', function (t) {
+config.test('saves data to config file', function (t) {
   
   var removeFile = createConfigFile({
     name: 'my-app',
@@ -78,7 +80,7 @@ test('config: saves data to config file', function (t) {
   t.end();
 });
 
-test('config: toJSON', function (t) {
+config.test('toJSON', function (t) {
   
   var removeFile = createConfigFile({
     name: 'my-app',
@@ -94,7 +96,7 @@ test('config: toJSON', function (t) {
   t.end();
 });
 
-test('config: toString', function (t) {
+config.test('toString', function (t) {
   
   var removeFile = createConfigFile({
     name: 'my-app',

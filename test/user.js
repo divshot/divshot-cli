@@ -1,12 +1,14 @@
 var fs = require('fs-extra');
 
 var getUser = require('../lib/user');
-var test = require('tape');
+var test = require('tapes');
 var homeDir = require('home-dir');
 
 var TEST_FILEPATH = homeDir('.divshot-test/user.json');
 
-test('user: loads', function (t) {
+var user = test('user');
+
+user.test('loads', function (t) {
   
   var user = getUser();
   var expectedFilepath = homeDir('.divshot/config/user.json');
@@ -17,7 +19,7 @@ test('user: loads', function (t) {
   t.end();
 });
 
-test('user: custom config file', function (t) {
+user.test('custom config file', function (t) {
   
   var filepath = homeDir('.divshot-test/user.json');
   var user = getUser({file: filepath});
@@ -28,7 +30,7 @@ test('user: custom config file', function (t) {
   t.end();
 });
 
-test('user: toJSON', function (t) {
+user.test('toJSON', function (t) {
   
   var user = getUser();
   
@@ -40,7 +42,7 @@ test('user: toJSON', function (t) {
   t.end();
 });
 
-test('user: saves data to user config file', function (t) {
+user.test('saves data to user config file', function (t) {
   
   var user = getUser({file: TEST_FILEPATH});
   
@@ -55,7 +57,7 @@ test('user: saves data to user config file', function (t) {
   t.end();
 });
 
-test('user: logs user out', function (t) {
+user.test('logs user out', function (t) {
   
   var user = getUser({file: TEST_FILEPATH});
   
@@ -69,7 +71,7 @@ test('user: logs user out', function (t) {
   t.end();
 });
 
-test('user: determines if user is authenticated', function (t) {
+user.test('determines if user is authenticated', function (t) {
   
   var user = getUser({file: TEST_FILEPATH});
   
@@ -84,7 +86,7 @@ test('user: determines if user is authenticated', function (t) {
   t.end();
 });
 
-test('user: deletes user config file', function (t) {
+user.test('deletes user config file', function (t) {
   
   var user = getUser({file: TEST_FILEPATH});
   
@@ -95,4 +97,3 @@ test('user: deletes user config file', function (t) {
   t.notOk(fs.existsSync(TEST_FILEPATH), 'deleted user config file');
   t.end();
 });
-

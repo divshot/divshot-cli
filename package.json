@@ -3,13 +3,13 @@
   "description": "Divshot in your Node.js",
   "version": "2.0.0",
   "scripts": {
-    "test": "npm run lint && tape test/**/**/*.js | tap-spec",
+    "test": "tapes test/**/**/*.js | tap-spec",
     "testw": "onchange './lib/**/*.js' './test/**/*.js' -- npm test",
     "lint": "jshint lib/ test/"
   },
   "dependencies": {
     "as-array": "^1.0.0",
-    "ask": "^1.1.0",
+    "ask": "^1.3.0",
     "async": "^0.9.0",
     "booly": "^1.0.2",
     "bytes": "^1.0.0",
@@ -30,6 +30,7 @@
     "merkle-dir": "git://github.com/divshot/merkle-dir",
     "mime-types": "^2.0.2",
     "mkdirp": "^0.5.0",
+    "mocksy": "^0.1.7",
     "moment": "^2.8.3",
     "nash": "^1.2.0",
     "open": "0.0.5",
@@ -48,6 +49,7 @@
   },
   "devDependencies": {
     "jshint": "^2.5.10",
+    "lab": "^5.1.0",
     "mocksy": "~0.1.4",
     "onchange": "0.0.2",
     "tap-spec": "^2.1.0",
