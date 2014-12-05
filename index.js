@@ -40,7 +40,7 @@ var cli = Nash.createCli({
   cwd: cwd,
   errors: errors,
   environments: environments,
-  timeout: 1500
+  timeout: 30000
 });
 
 // Flags
