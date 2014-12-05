@@ -284,7 +284,7 @@ divshot help [command]
 divshot hooks
 ```
 
-Get a list of webhooks for the current app. For more documentation on using Divshot webhooks, see the [Webhook Documentation](https://docs.divshot.com/guides/webhooks).
+Get a list of webhooks for the current app. For more documentation on using Divshot webhooks, see the [Webhook Documentation](http://docs.divshot.com/guides/webhooks).
 
 #### hooks:add
 
@@ -292,7 +292,7 @@ Get a list of webhooks for the current app. For more documentation on using Divs
 divshot hooks:add [url]
 ```
 
-Add a webhook to the current app. For more documentation on using Divshot webhooks, see the [Webhook Documentation](https://docs.divshot.com/guides/webhooks).
+Add a webhook to the current app. For more documentation on using Divshot webhooks, see the [Webhook Documentation](http://docs.divshot.com/guides/webhooks).
 
 #### hooks:remove
 
@@ -300,7 +300,7 @@ Add a webhook to the current app. For more documentation on using Divshot webhoo
 divshot hooks:remove [optional url]
 ```
 
-Remove a webhook from the current app. If no url is provided, you will be prompted with a list of your webhooks to select for removal. For more documentation on using Divshot webhooks, see the [Webhook Documentation](https://docs.divshot.com/guides/webhooks).
+Remove a webhook from the current app. If no url is provided, you will be prompted with a list of your webhooks to select for removal. For more documentation on using Divshot webhooks, see the [Webhook Documentation](http://docs.divshot.com/guides/webhooks).
 
 #### hooks:pause
 
@@ -308,7 +308,7 @@ Remove a webhook from the current app. If no url is provided, you will be prompt
 divshot hooks:pause [optional url]
 ```
 
-Pause a webhook without deleting it for the current app. If no url is provided, you will be prompted with a list of your webhooks to select to pause. For more documentation on using Divshot webhooks, see the [Webhook Documentation](https://docs.divshot.com/guides/webhooks).
+Pause a webhook without deleting it for the current app. If no url is provided, you will be prompted with a list of your webhooks to select to pause. For more documentation on using Divshot webhooks, see the [Webhook Documentation](http://docs.divshot.com/guides/webhooks).
 
 #### hooks:resume
 
@@ -316,7 +316,7 @@ Pause a webhook without deleting it for the current app. If no url is provided, 
 divshot hooks:resume [optional url]
 ```
 
-Resume a webhook for the current app. If no url is provided, you will be prompted with a list of your webhooks to select to resume. For more documentation on using Divshot webhooks, see the [Webhook Documentation](https://docs.divshot.com/guides/webhooks).
+Resume a webhook for the current app. If no url is provided, you will be prompted with a list of your webhooks to select to resume. For more documentation on using Divshot webhooks, see the [Webhook Documentation](http://docs.divshot.com/guides/webhooks).
 
 ### init
 
