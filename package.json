@@ -1,7 +1,7 @@
 {
   "name": "divshot-cli",
   "description": "CLI for Divshot",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "dependencies": {
     "async": "^0.9.0",
     "booly": "^1.0.2",
