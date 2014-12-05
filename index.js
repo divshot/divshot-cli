@@ -99,10 +99,6 @@ cli.catchAll(function (type, attemptedCommand) {
   cli.log('Note: you may need to update Divshot in order to use that command: ' + format.bold('npm install -g divshot-cli'));
 });
 
-// 
-// TODO: make a secret(true) method for commands to hide from help
-// list
-
 // Add commands
 commands.connect(cli);
 
