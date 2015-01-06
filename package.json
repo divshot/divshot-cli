@@ -1,11 +1,10 @@
 {
   "name": "divshot-cli",
   "description": "CLI for Divshot",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "engines": {
     "node": "<=0.10.33 >=0.10.35"
   },
-  "engineStrict": true,
   "dependencies": {
     "async": "^0.9.0",
     "booly": "^1.0.2",
