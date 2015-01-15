@@ -58,6 +58,7 @@ CLI for Divshot
 * `-t, --token [token]` - manually pass access token
 * `-a, --app [app name]` - manually supply an app name
 * `-c, --config [config]` - use a different config file
+* `-o, --org [org name]` - set command to operate on the given organization
 * `--timeout [timeout]` - set the command timeout in milliseconds
 
 #### Environments

@@ -77,6 +77,12 @@ cli.flag('--timeout')
     cli.timeout = timeout;
   });
 
+cli.flag('-o', '--org')
+  .description('set command to operate on the given organization')
+  .handler(function (org) {
+    cli.org = org;
+  });
+
 // Helpers
 cli.method('authenticate', function (cli, command, done) {
   if (!cli.user.authenticated()) return done(cli.errors.NOT_AUTHENTICATED);
