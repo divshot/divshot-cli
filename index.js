@@ -4,13 +4,16 @@ var Nash = require('nash');
 var homeDir = require('home-dir');
 var Divshot = require('divshot-api');
 var format = require('chalk');
+var format = require('chalk');
+
 var User = require('./lib/user');
 var Cwd = require('./lib/cwd');
 var environments = require('./lib/environments');
 var commands = require('./lib/commands');
 var errors = require('./lib/errors');
-var format = require('chalk');
+var dumper = require('./lib/dumper');
 
+var CLIENT_ID = '526753cf2f55bd0002000006';
 var API_HOST = process.env.API_HOST || 'https://api.divshot.com';
 process.env.DIVSHOT_HASHED_BUCKET || (process.env.DIVSHOT_HASHED_BUCKET = "divshot-io-hashed-production");
 
@@ -33,7 +36,7 @@ var cli = Nash.createCli({
   api: Divshot.createClient({
     token: user.get('token'),
     host: API_HOST,
-    client_id: '526753cf2f55bd0002000006'
+    client_id: CLIENT_ID
   }),
   
   user: user,
@@ -42,6 +45,9 @@ var cli = Nash.createCli({
   environments: environments,
   timeout: 30000
 });
+
+// Set up process watching dumping machine
+dumper(cli.api.events);
 
 // Flags
 cli.flag('-a', '--app')

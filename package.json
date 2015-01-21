@@ -1,7 +1,7 @@
 {
   "name": "divshot-cli",
   "description": "CLI for Divshot",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "dependencies": {
     "async": "^0.9.0",
     "booly": "^1.0.2",
@@ -10,9 +10,11 @@
     "clone": "^0.1.18",
     "copy-files": "^0.1.0",
     "cozy-slug": "0.2.2",
-    "divshot-api": "0.8.1",
+    "divshot-api": "1.0.0",
     "divshot-push": "1.0.3",
+    "exit-hook": "^1.1.1",
     "feedback": "^0.3.2",
+    "fs-extra": "^0.15.0",
     "home-dir": "^0.2.0",
     "inquirer": "^0.8.0",
     "join-path": "^1.0.0",
