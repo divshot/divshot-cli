@@ -11,7 +11,7 @@ var Cwd = require('./lib/cwd');
 var environments = require('./lib/environments');
 var commands = require('./lib/commands');
 var errors = require('./lib/errors');
-var dumper = require('./lib/dumper');
+var dumper = require('divshot-dumper');
 
 var CLIENT_ID = '526753cf2f55bd0002000006';
 var API_HOST = process.env.API_HOST || 'https://api.divshot.com';
