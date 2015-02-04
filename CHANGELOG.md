@@ -8,8 +8,8 @@
 * **[#143](https://github.com/divshot/divshot-cli/issues/143)** - Raw http requests
 * **[#145](https://github.com/divshot/divshot-cli/issues/145)** - Rollback release to any version
 * **[#146](https://github.com/divshot/divshot-cli/issues/146)** - Handle SSL uploading errors
-* **[#147](https://github.com/divshot/divshot-cli/issues/147)** - ability to remove environment variables
-* **[#148](https://github.com/divshot/divshot-cli/issues/148)** - update divshot-push to 1.3
+* **[#147](https://github.com/divshot/divshot-cli/issues/147)** - Ability to remove environment variables
+* **[#148](https://github.com/divshot/divshot-cli/issues/148)** - Update divshot-push to 1.3
 
 * * *
 

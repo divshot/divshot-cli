@@ -23,7 +23,8 @@ CLI for Divshot
 * [emails:remove](#emailsremove) - remove an email from your app
 * [emails:resend](#emailsresend) - resend the confirmation email
 * [env](#env) - list environment variables for your app
-* [env:add](#envadd) - add an environment variable to your app
+* [env:add](#envadd) - add environment variables to your app
+* [env:remove](#envremove) - remove environment variables from your app
 * [env:config](#envconfig) - configure your app's environment
 * [env:pull](#envpull) - copy environment data to your local environment
 * [files](#files) - list the current files associated with the given environment
@@ -238,16 +239,13 @@ divshot env:add [environment] KEY=value KEY2=value ...
 
 Add environment variables to the current app. See [Environment Variables](http://docs.divshot.com/guides/environment-variables) for more details.
 
-### env:config
+### env:remove
 
 ```
-divshot env:config [environment] setting=value ...
+divshot env:remove [environment] KEY1 KEY2 ...
 ```
 
-Configure values in your application's environment. Possible and helpful values include:
-
-* `force_ssl` - Force ssl on all requests to your app. Takes values `true` or `false`. 
-* `force_domain` - Force all requests to your app's production ready domains to redirect to the given domain. Takes the domain as the value
+Remove environment variables from the current app. See [Environment Variables](http://docs.divshot.com/guides/environment-variables) for more details.
 
 ### env:pull
 
@@ -437,10 +435,12 @@ Rename your app. This changes the subdomain on Divshot and updates your configur
 ### rollback
 
 ```
-divshot rollback [environment]
+divshot rollback [environment] [version]
 ```
 
 Rollback the given environment to a previous release. This is useful when buggy code has been deployed. Divshot automatically detects and rolls back to your previous release. See [environments](#environments) for a list of available environments.
+
+Optionally rollback to a specific version of your app.
 
 ### server
 
