@@ -15,7 +15,3 @@ var notifier = updateNotifier({
 if (notifier.update) notifier.notify();
 
 cli.run(process.argv);
-
-
-
-
