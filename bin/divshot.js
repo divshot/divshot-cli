@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var cli = require('../index.js');
+var cli = require('../lib/index.js');
 var updateNotifier = require('update-notifier');
 var pkg = require('../package.json');
 var updateCheckInterval = 1000 * 60 * 60 * 24 * 7; // 1 week
