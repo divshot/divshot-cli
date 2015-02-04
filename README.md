@@ -25,7 +25,6 @@ CLI for Divshot
 * [env](#env) - list environment variables for your app
 * [env:add](#envadd) - add environment variables to your app
 * [env:remove](#envremove) - remove environment variables from your app
-* [env:config](#envconfig) - configure your app's environment
 * [env:pull](#envpull) - copy environment data to your local environment
 * [files](#files) - list the current files associated with the given environment
 * [help](#help) - get help with common commands
