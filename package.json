@@ -23,7 +23,6 @@
     "lodash": "^2.4.1",
     "marked": "^0.3.2",
     "marked-terminal": "^1.1.1",
-    "merkle-dir": "git://github.com/divshot/merkle-dir",
     "mime-types": "^2.0.2",
     "mkdirp": "0.5.x",
     "moment": "^2.8.3",
