@@ -5,13 +5,13 @@ var homeDir = require('home-dir');
 var Divshot = require('divshot-api');
 var format = require('chalk');
 var format = require('chalk');
-
-var User = require('./user');
-var Cwd = require('./cwd');
-var environments = require('./environments');
-var commands = require('./commands');
-var errors = require('./errors');
 var dumper = require('divshot-dumper');
+
+var User = require('./lib/user');
+var Cwd = require('./lib/cwd');
+var environments = require('./lib/environments');
+var commands = require('./lib/commands');
+var errors = require('./lib/errors');
 
 var CLIENT_ID = '526753cf2f55bd0002000006';
 var API_HOST = process.env.API_HOST || 'https://api.divshot.com';
@@ -20,7 +20,7 @@ process.env.DIVSHOT_HASHED_BUCKET || (process.env.DIVSHOT_HASHED_BUCKET = "divsh
 var cliConfigDirectory = path.join(homeDir(), '.divshot');
 var user = new User(cliConfigDirectory);
 var cwd = new Cwd();
-var title = fs.readFileSync(__dirname + '/logo.txt')
+var title = fs.readFileSync(__dirname + '/lib/logo.txt')
 var description = [
   'Application-Grade Static Web Hosting\n  ',
   '  Host single-page apps and static sites with',
