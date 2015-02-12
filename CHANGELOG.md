@@ -1,5 +1,12 @@
 # Changelog 
 
+## [1.8.0](https://github.com/divshot/divshot-cli/issues?q=milestone%3A1.8)
+
+**Released on 2-12-2015**
+
+* **[]()** - 
+* * **[]()** - 
+
 ## [1.7.0](https://github.com/divshot/divshot-cli/issues?q=milestone%3A1.7+is%3Aclosed)
 
 **Released on 2-4-2015**
