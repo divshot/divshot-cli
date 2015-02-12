@@ -4,8 +4,10 @@
 
 **Released on 2-12-2015**
 
-* **[]()** - 
-* * **[]()** - 
+* **[#127](https://github.com/divshot/divshot-cli/issues/127)** - Divshot protect should display more informative error when environment is empty
+* **[#128](https://github.com/divshot/divshot-cli/issues/128)** - Divshot protect error should display usage info
+* **[#152](https://github.com/divshot/divshot-cli/issues/152)** - Custom domains on any environment
+* **[#153](https://github.com/divshot/divshot-cli/issues/153)** - Better error message environments that don't exist on promote
 
 ## [1.7.0](https://github.com/divshot/divshot-cli/issues?q=milestone%3A1.7+is%3Aclosed)
 
