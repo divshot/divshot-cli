@@ -177,10 +177,12 @@ See a list of all custom domains associated with your app. For more in-depth usa
 ### domains:add
 
 ```
-divshot domains:add [domain]
+divshot domains:add [environment] [domain]
 ```
 
 Add a custom domain to your app. You may see a list of your domains with [` divshot domains `](#domains). For more in-depth usage, see [Divshot Custom Domains](http://docs.divshot.io/guides/domains).
+
+`environment` is optional and defaults to `production`.
 
 ### domains:remove
 
