@@ -68,7 +68,7 @@ cli.flag('-v', '--version')
   .exit(true)
   .handler(function () {
     
-    var package = require(path.resolve(__dirname, '../package.json'));
+    var package = require(path.resolve(__dirname, './package.json'));
     cli.log(package.version);
   });
 
