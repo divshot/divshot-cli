@@ -43,6 +43,7 @@ CLI for Divshot
 * [promote](#promote) - promote one environment to another
 * [protect](#protect) - add http basic auth to any environment
 * [pull](#pull) - download the current files for a given environment into a directory
+* [purge](#purge) - purge the cache for your app
 * [push](#push) - deploy your app to the specified environment
 * [rename](#rename) - change the name of an app
 * [rollback](#rollback) - rollback an environment to a previous release
@@ -416,6 +417,14 @@ divshot pull [environment] [optional directory]
 ```
 
 Download all the files currently associated with the given environment. If no directory is provided, it defaults to the current directory. These files are the files deployed to Divshot using [divshot push](#push)
+
+### purge
+
+```
+divshot purge [optional environment]
+```
+
+Purge the cache for your app. If no environment is provided, all caches for all your environments will be purged.
 
 ### push
 
