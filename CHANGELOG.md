@@ -1,5 +1,11 @@
 # Changelog 
 
+## 1.9.1
+
+**Released on 2-24-2015**
+
+* adds description in usage screen for the purge command
+
 ## [1.9.0](https://github.com/divshot/divshot-cli/issues?q=is%3Aissue+is%3Aclosed+milestone%3A1.9)
 
 **Released on 2-23-2015**
