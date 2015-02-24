@@ -1,5 +1,12 @@
 # Changelog 
 
+## [1.9.0](https://github.com/divshot/divshot-cli/issues?q=is%3Aissue+is%3Aclosed+milestone%3A1.9)
+
+**Released on 2-23-2015**
+
+* **[157](https://github.com/divshot/divshot-cli/issues/157)** - fixed `-v` and `--version` flags which weren't working
+* **[158](https://github.com/divshot/divshot-cli/issues/158)** - added cache purge command
+
 ## [1.8.0](https://github.com/divshot/divshot-cli/issues?q=milestone%3A1.8)
 
 **Released on 2-12-2015**
