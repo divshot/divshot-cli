@@ -1,5 +1,11 @@
 # Changelog 
 
+## 1.10.0
+
+**Released on 2-24-2015**
+
+* **[#160](https://github.com/divshot/divshot-cli/issues/160)** - ensure app config gets posted as json on push
+
 ## 1.9.1
 
 **Released on 2-24-2015**
