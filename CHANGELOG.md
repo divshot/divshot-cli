@@ -1,5 +1,11 @@
 # Changelog 
 
+## 1.10.1
+
+**Released on 2-24-2015**
+
+* use Superstatic 1.2.0. This mainly adds the ability to define your custom routes in a specific order
+
 ## 1.10.0
 
 **Released on 2-24-2015**
