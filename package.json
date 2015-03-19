@@ -1,7 +1,7 @@
 {
   "name": "divshot-cli",
   "description": "CLI for Divshot",
-  "version": "1.10.2",
+  "version": "1.10.3",
   "dependencies": {
     "async": "^0.9.0",
     "booly": "^1.0.2",
@@ -37,7 +37,7 @@
     "request": "^2.44.0",
     "sizer": "^0.1.1",
     "slash": "^1.0.0",
-    "superstatic": "1.2.0",
+    "superstatic": "1.2.1",
     "touch": "0.0.3",
     "update-notifier": "^0.2.2",
     "writestreamp": "^0.1.0"
